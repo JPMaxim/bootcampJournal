@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+* { 
+    overflow: hidden;
+}
+body {
+    font-family: 'Caveat', cursive;
+    background-color: white;
+    margin:0;
+}
+header, footer {
+    background-color: #211f84;
+    color: rgb(255, 233, 107);
+}
+main {
+    background-color: #bfeaed;
+    color:navy;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 1024px) {
+
+}
