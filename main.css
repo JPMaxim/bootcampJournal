@@ -84,19 +84,6 @@ main {
     background-size: cover;
     max-height: 100vh;
     /* height is set with JS setHeroHeight() onload */
-
-
-
-
-
-
-    display:none;
-
-
-
-
-
-
 }
 #siteTitle {
     font-size: 70pt;
