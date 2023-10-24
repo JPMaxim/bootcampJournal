@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Playpen+Sans&display=swap');
 
 body {
-    font-family: caveat, cursive;
+    font-family: 'Playpen Sans', cursive;
     background-color: white;
     margin: 0;
     box-sizing: border-box;
@@ -9,6 +10,7 @@ body {
 
 /* HEADER AND FOOTER */
 header, footer {
+    font-family: caveat, cursive;
     background-image: linear-gradient(to bottom right, white, grey);
     color: black;
     height: 60px;
@@ -59,7 +61,6 @@ nav, .navContainer {
     padding: 8px 16px;
     text-decoration: none;
     text-align: center;
-
 }
 /* change colour on hover */
 .navContainer > ul > li > a:hover {
@@ -79,6 +80,7 @@ main {
     color:black;
 }
 #heroContainer {
+    font-family: caveat, cursive;
     width: 100%;
     background: white url(./images/hero.jpg) no-repeat;
     background-size: cover;
@@ -93,26 +95,44 @@ main {
 .mainContainer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
 }
 .contentContainer {
-    width: 45%;
+    /* position */
+    width: 35%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    /* style */
+    padding: 40px;
+    background-color: rgb(235, 235, 235);
+    margin-bottom: 100px;
+    border-radius: 75px;
+}
+.textContainer {
+   width: 80%;
+   margin: auto;
 }
 .contentContainer > h2 {
-    font-size: 30pt;
+    font-family: caveat, cursive;
+    font-size: 40pt;
+    text-align: center;
+}
+.contentContainer > p {
+    margin-top: 0;
 }
 #codewarsContainer{
+    margin-top: 100px;
+}
+#codewarsContainer > img {
+    width:400px;
 }
 #cssContainer{
-    padding: 400px 20px 20px;
+    margin-top: 400px;
 }
-#cardsSimContainer{
-
-}
+/* #cardsSimContainer{
+} */
 
 /* laptop */
 @media only screen and (max-width: 1024px) {
@@ -126,18 +146,14 @@ main {
     }
 }
 /* Tablet */
-@media only screen and (max-width: 768px) {    
-    body {
-        /* centre */
-        max-width: 600px;
-        margin:auto;
-    }
-    header {
-        max-width: 600px;
-    }
+@media only screen and (max-width: 768px) {
+    body, header, footer{max-width: 100vw;}
     #siteTitle {
         font-size: 35pt;
         padding-top: 8%;
+    }
+    .navContainer {
+        width: 100%;
     }
 }
 /* Mobile */

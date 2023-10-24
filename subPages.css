@@ -1,0 +1,25 @@
+header {
+    position: fixed;
+}
+
+#subLandingContainer > h1 {
+    /* position */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    margin: 0;
+    padding-top: 60px;
+    /* style */
+    font-family: caveat, cursive;
+    font-size: 80pt;
+}
+
+.contentContainer {
+    width: 50%;
+    margin-bottom: 100px;
+}
+h2 {
+    font-size: 30pt;
+    text-align: center;
+}

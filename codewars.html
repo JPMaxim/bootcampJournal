@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jono's Journal - Codewars</title>
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="./main.css">
+    <link type="text/css" rel="stylesheet" href="./subPages.css">
+    <!-- JS  -->
+    <script src="./main.js"></script>
+    <!-- Icon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/siteIcon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navContainer">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./codewars.html">Codewars</a>
+                    </li>
+                    <li>
+                        <a href="./css.html">CSS</a>
+                    </li>
+                </ul>
+            </div>            
+        </nav>
+    </header>
+
+    <main>
+        <div id="subLandingContainer">
+            <h1>Codewars</h1>
+        </div>
+
+        <div class="mainContainer">          
+                    
+            <div class="contentContainer">
+                <div class="textContainer">
+                    <h2>Sum By Factors</h2>
+                    <p>I wanted to try a 4 kyu Kata for a challenge and found this one called <i>Sum By Factors</i>. <br>The goal was, given an array of integers, to produce a sorted array of all prime factors and the sum of their multiples, in ascending order. For Example:</p>   
+                </div>
+                <img src="./images/sumByFactorsDemonstration.png">
+                <div class="textContainer">
+                    <p>After an afternoon and a few error codes and corrections I got to the point where I had a working piece of code in VSCode. However, when I attempted on codewars I ran into an 'Execution Timed Out' error. <br>The server only allows a certain amount of time for your code to execute before it cuts off, my code was too inefficient. <br>It took me quite some time to figure out how to optimize my algorithms. I found that there's an algorithm called The Sieve of Eratosthenes that more efficiently finds prime numbers, and realised that I could filter out a lot of unnecessary iterations on a particular function.</p>
+                    <h3>What I learned</h3>
+                    <p>I think I got some valuable take-aways: Making a plan/design with some pseudocode and looking what methods and algorithms exist before diving in, to make more efficient code with less mistakes.  </p>
+                </div>
+            </div>
+            <div class="contentContainer">
+                <div class="textContainer">
+
+                    <h2>Various 7+kyu's invloving arrays</h2>
+                    <p>I've been making life a lot harder for myself on some codewars kata and finding there are much better practices. It's been very valuable going through the solutions voted up as best practice after submitting a solution. Reason being that I've often found there's an array method that does what I spent about 10 lines doing straight away, LOL. Lesson learnt, know your methods. Also in general just have a look if there's a method that will do what you want to do before diving in I suppose.</p>
+                    <p>Here's an example: <br>This Kata 'Dominant array elements' asks you take an array of integers, then output an array of all the integers that are larger than every other integer to it's right. My solution took just over 30 mins and was 23 lines long. Here's a lovely 1 line solution:</p>
+                </div>
+                <img src="./images/kataDominantArr.png">
+                <div class="textContainer">
+                    <p>The .filter() method creates a new array filled with elements that pass a test provided by a function. <br>The .slice() method slices out a piece of an array. <br>The .every() method returns true if every element returns true through a given function.</p>
+                    <h3>What I learned</h3>
+                    <p>Again, plan better and do a bit of research before writing the code. Still I find the 1 line pretty hard to get my head around, I likely wouldn't write a 1 liner yet but I do understand the methods and could definetely shorten it a lot from 23 lines.</p>
+                </div>
+            </div>
+            <div class="contentContainer">
+                <div class="textContainer">
+                    <h2>Plants and Zombies</h2>
+                    <p>After completing Sum By Factors I've gone for another challenge and upped the difficulty to 3kyu this time. This Kata is a fun Sim-like challenge based on the PlantsVsZombies game. You have to calculate how many moves any given situation will last before the game ends.  Early days I've not put much of a dint in it yet since I've been focussing more on this journal.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
