@@ -21,7 +21,7 @@
                         <a href="./index.html">Home</a>
                     </li>
                     <li>
-                        <a href="./codewars.html">Codewars</a>
+                        <a class="currentPageLink" href="./codewars.html">Codewars</a>
                     </li>
                     <li>
                         <a href="./css.html">CSS</a>
@@ -61,8 +61,15 @@
                 <div class="textContainer">
                     <p>The .filter() method creates a new array filled with elements that pass a test provided by a function. <br>The .slice() method slices out a piece of an array. <br>The .every() method returns true if every element returns true through a given function.</p>
                     <h3>What I learned</h3>
-                    <p>Again, plan better and do a bit of research before writing the code. Still I find the 1 line pretty hard to get my head around, I likely wouldn't write a 1 liner yet but I do understand the methods and could definetely shorten it a lot from 23 lines.</p>
+                    <p>Again, plan better and do a bit of research before writing the code. Still I find the 1 line pretty hard to get my head around, I likely wouldn't write a 1 liner yet but I do understand the methods and could definetely shorten it a lot from 23 lines.</p>                    
+                    <h3>Some Progression</h3>
+                    <p>Wednesday morning's codewars time went pretty well. I did another 7kyu called <i>Katastrophy</i> where, given: 1. an array of nested arrays (representing earthquake intensity) and 2. an integer (representing building age), you had to calculate if the building would stand against the earthquake. Without going super deep into it I was happy with my usage of .forEach() in order to calculate the earthquake magnitude rather than using lots of iterations like I previously have.</p>
                 </div>
+                <img src="./images/katastrophy.png">
+                <div class="textContainer">
+                    <p>What happens here is on line 8, .forEach() calls a function for each nested array element in 'earthquake'. That function then calls another .forEach() on line 9 which goes through each element in the nested arrays and sums all elements. Now on line 10, back to the first .forEach() function, the code multiplies the sum of each array's elements together and assigns it to the product variable. For example:</p>
+                </div>
+                <img src="./images/katastrophyEarthquakeDemonstration.png">
             </div>
             <div class="contentContainer">
                 <div class="textContainer">

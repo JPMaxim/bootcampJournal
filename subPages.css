@@ -23,3 +23,6 @@ h2 {
     font-size: 30pt;
     text-align: center;
 }
+.textContainer > p {
+    font-size: 13pt;
+}
