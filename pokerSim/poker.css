@@ -1,0 +1,136 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #059500;
+    color: white;
+    margin: 0;
+    padding: 0;    
+}
+.buttonsDiv {
+    display:flex;
+}
+.btn {
+    padding: 20px;
+    margin-left: 20px;
+}
+/* Grid Layout */
+#tableGridLayout {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(16, 1fr);
+    padding: 50px;
+}
+#deck {
+    grid-area: 5 / 2 / 6 / 4;
+    border: solid 2px black;
+}
+#muck {
+    grid-area: 5 / 14 / 6 / 16;
+    border: solid 2px black;
+}
+#player1 {
+    grid-area: 1 / 7 / 2 / 11;
+    padding: 10px;
+    border: solid 2px black;
+    min-height: 50px;
+}
+#player2 {
+    grid-area: 3 / 13 / 4 / 17;
+    padding: 10px;
+    border: solid 2px black;
+    min-height: 50px;
+}
+#player3 {
+    grid-area: 5 / 7 / 6 / 11;
+    padding: 10px;
+    border: solid 2px black;
+    min-height: 50px;
+}
+#player4 {
+    grid-area: 3 / 1 / 4 / 5;
+    padding: 10px;
+    border: solid 2px black;
+    min-height: 50px;
+}
+
+/*Community Area*/
+#communityCardsAndPot {
+    grid-area: 2 / 5 / 5 / 13;
+    padding: 10px;
+    border: solid 2px black;
+    min-height: 150px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+#betChipsP1 {
+    grid-area: 1 / 4 / 2 / 5;
+    border: solid 2px black;
+}
+#betChipsP2 {
+    grid-area: 3 / 7 / 4 / 8;
+    border: solid 2px black;
+}
+#betChipsP3 {
+    grid-area: 5 / 4 / 6 / 5;
+    border: solid 2px black;
+}
+#betChipsP4 {
+    grid-area: 3 / 1 / 4 / 2;
+    border: solid 2px black;
+}
+#communityCards {
+    grid-area: 3 / 2 / 5 / 7;
+    border: solid 2px black;
+}
+#commCardsFlexCont {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+#pot {
+    grid-area: 2 / 4 / 3 / 5;
+    border: solid 2px black;
+}
+
+/* Player Area */
+.playerAreaFlexContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.playerAreaFlexContainer > h3 {
+    margin: 0 0 10px 0;
+}
+.handAndChipsFlexCont {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.handAndChipsFlexCont > .hand {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+.cardSlot {
+    border: solid 2px black;
+    height: 50px;
+    width: 35px;
+}
+#deckCard{
+    background: #cccccc url('./images/cardBack.jpg');
+    background-size: cover;
+    height: 100%;
+}
+#player1Card1, #player1Card2, #player2Card1, #player2Card2, #player3Card1, #player3Card2, #player4Card1, #player4Card2, #commCard1, #commCard2, #commCard3, #commCard4, #commCard5, #muckCard  {
+    background-color: #cccccc;
+    background-image: none;
+    background-size: cover;
+    height: 100%;
+}

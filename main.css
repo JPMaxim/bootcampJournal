@@ -138,6 +138,7 @@ main {
     border-radius: 10px;
     /* transition */
     transition: background-color 1s;
+    padding: 0;
 }
 @keyframes flash {
     0% {color: black;}
@@ -145,12 +146,16 @@ main {
     40% {color: black;}
 }
 .contentContainer > button > a{
-    padding: 10px;
+    /* padding: 10px; */
     font-family: caveat, cursive;
     font-size: 16pt;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    /* have link content box take up all of button content box */
+    display:block;
+    width: 100%;
+    line-height: 50px;
 }
 .contentContainer > button:hover {
     background-color: white; 

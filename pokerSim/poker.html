@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="en-gb">
+<head>
+	<title>Template - Manchester Climbing Community</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="poker.css">
+    
+	<!-- JS -->
+	<script src="texasHoldem.js"></script>
+
+	<!-- icon -->
+	<link rel="icon" type="image/png" href="./casino-chip.png">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!-- description -->
+	<meta name="description" content="Card Games Site">
+	<!-- keywords -->
+	<meta name="keywords" content="texas holdem">
+	
+</head>
+
+<body>
+
+	<!------------------------------------------------------
+		MAIN
+	------------------------------------------------------>
+	<main>
+        <section>
+            <h1>Texas Hold'em Poker</h1>
+            <p>4 Player Cash Table</p>
+            <p>1 Player Game - 3 bots</p>
+        </section>
+        <div class="buttonsDiv">
+            <button class="btn" onclick="deal()">Deal</button>
+            <button class="btn" onclick="flop()">Flop</button>
+            <button class="btn" onclick="turn()">Turn</button>
+            <button class="btn" onclick="river()">River</button>
+        </div>
+
+        <section id="tableGridLayout">
+            <!-- Player 1 -->
+            <div id="player1">
+                <div class="playerAreaFlexContainer">
+                    <h3>Player 1</h3>
+                    <div class="handAndChipsFlexCont">
+                        <div class="hand">
+                            <div class="cardSlot">
+                                <div id="player1Card1"></div>
+                            </div>
+                            <div class="cardSlot">
+                                <div id="player1Card2"></div>
+                            </div>
+                        </div>
+                        <div id="chipsP1">Chips</div>
+                    </div>
+                </div>
+                <div id="actionsP1"></div>
+            </div>
+            
+            <!-- Player 2 -->
+            <div id="player2">
+                <div class="playerAreaFlexContainer">
+                    <h3>Player 2</h3>
+                    <div class="handAndChipsFlexCont">
+                        <div class="hand">
+                            <div class="cardSlot">
+                                <div id="player2Card1"></div>
+                            </div>
+                            <div class="cardSlot">
+                                <div id="player2Card2"></div>
+                            </div>
+                        </div>
+                        <div id="chipsP2">Chips</div>
+                    </div>
+                </div>
+                <div id="actionsP2"></div>
+            </div>
+            
+            <!-- Player 3 -->
+            <div id="player3">
+                <div class="playerAreaFlexContainer">
+                    <h3>Player 3</h3>
+                    <div class="handAndChipsFlexCont">
+                        <div class="hand">
+                            <div class="cardSlot">
+                                <div id="player3Card1"></div>
+                            </div>
+                            <div class="cardSlot">
+                                <div id="player3Card2"></div>
+                            </div>
+                        </div>
+                        <div id="chipsP3">Chips</div>
+                    </div>
+                </div>
+                <div id="actionsP3"></div>
+            </div>
+            
+            <!-- Player 4 -->
+            <div id="player4">
+                <div class="playerAreaFlexContainer">
+                    <h3>Player 4</h3>
+                    <div class="handAndChipsFlexCont">
+                        <div class="hand">
+                            <div class="cardSlot">
+                                <div id="player4Card1"></div>
+                            </div>
+                            <div class="cardSlot">
+                                <div id="player4Card2"></div>
+                            </div>
+                        </div>
+                        <div id="chipsP4">Chips</div>
+                    </div>
+                </div>
+                <div id="actionsP4"></div>
+            </div>
+
+            <!-- Community Cards / Pot -->
+            <div id="communityCardsAndPot">
+                <div id="betChipsP1">P1 Bet</div>
+                <div id="betChipsP2">P2 Bet</div>
+                <div id="betChipsP3">P3 Bet</div>
+                <div id="betChipsP4">P4 Bet</div>
+                <div id="communityCards">
+                    <div id="commCardsFlexCont">
+                        <div class="cardSlot">
+                            <div id="commCard1"></div>
+                        </div>
+                        <div class="cardSlot">
+                            <div id="commCard2"></div>
+                        </div>
+                        <div class="cardSlot">
+                            <div id="commCard3"></div>
+                        </div>
+                        <div class="cardSlot">
+                            <div id="commCard4"></div>
+                        </div>
+                        <div class="cardSlot">
+                            <div id="commCard5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pot">Pot</div>
+            </div>
+
+            <!-- Deck -->
+            <div id="deck">
+                Deck
+                <div class="cardSlot">
+                    <div id="deckCard"></div>
+                </div>
+            </div>
+            <!-- Muck -->
+            <div id="muck">
+                Muck
+                <div class="cardSlot">
+                    <div id="muckCard"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
