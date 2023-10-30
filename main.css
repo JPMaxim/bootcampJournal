@@ -14,7 +14,8 @@ header, footer {
     font-family: caveat, cursive;
     background-image: linear-gradient(to bottom right, white, grey);
     color: black;
-    height: 60px;
+    min-height: 80px;
+    height: auto;
     width: 100vw;
 }
 header {
@@ -28,8 +29,8 @@ nav, .navContainer {
     height: inherit;
 }
 .navContainer {
-    /* nav is half width of header and centered*/
-    width: 50%;
+    /* nav is 3/4 width of header and centered*/
+    width: 75%;
     margin: auto;
     font-size: 20pt;
 }
@@ -39,64 +40,109 @@ nav, .navContainer {
     list-style-type: none;
     margin: 0;
     /* padding: top right bottom left */
-    padding: 10px 0 10px 0;
+    padding: 20px 0 20px 0;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
-    align-items: center;
-    height: 40px;
+    align-items: stretch;
+    min-height: 60px;
+    height: auto;
 }
 .navContainer > ul > li {
-    width: 33%;
+    width: 14.286%;
     height: inherit;
     /* centre align text */
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 /* nav links */
 .navContainer > ul > li > a {
-    display: block;
+    font-size: 23pt;
     color: black;
-    padding: 5px 10px;
     text-decoration: none;
     text-align: center;
-    width: 40%;
+    min-width: 60%;
+    min-height: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 .currentPageLink {
     background: rgb(231, 231, 231) linear-gradient(to bottom right, white, rgb(189, 189, 189));;
     border-radius: 10px;
+    border-bottom: solid 2px rgb(36, 36, 36);
+    border-right: solid 2px rgb(36, 36, 36);    
 }
 /* change colour on hover */
 .navContainer > ul > li > a:hover {
     color: darkmagenta;
 } 
 /* add division lines */
-.navContainer > ul > li:first-child {
+.navContainer > ul > li:nth-child(even) {
     border-right: solid 1px black;
-}
-.navContainer > ul > li:last-child {
     border-left: solid 1px black;
 }
+/* .navContainer > ul > li:last-child {
+} */
 
 /* MAIN */
 main {
-    background-color: white;
+    background: lightgrey url("./images/geometric.jpg") repeat;
+    background-size: contain;
     color:black;
 }
 #heroContainer {
     font-family: caveat, cursive;
     width: 100%;
-    background: white url(./images/hero.jpg) no-repeat;
+    background: white url("./images/hero.jpg") no-repeat;
     background-size: cover;
     max-height: 100vh;
     /* height is set with JS setHeroHeight() onload */
 }
 #siteTitle {
-    font-size: 70pt;
+    font-size: 110pt;
     text-align: center;
     padding-top: 5%;
+}
+@keyframes descriptionBackground {
+    0% {background-size: 10px 6.6px;}
+    100% {background-size: 9.8px 6.6px;}
+} 
+#descriptionContainer {
+    width: 100vw;
+    min-height: 40vh;
+    height: auto;
+    background: rgb(235, 235, 235) url("./images/pebbledash.jpg") repeat;
+    background-size: 10px 6.6px;
+    /* animation: name, duration, timing-function, delay,  iteration */
+    animation: descriptionBackground linear 3s infinite alternate;
+}
+#descriptionTextContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 300px;
+    padding: 60px;
+    width: 50%;
+    margin: 10vh auto 10vh;
+    border-bottom: solid 5px grey;
+    border-right: solid 5px grey;
+    box-shadow: 5px 5px 30px black;
+}
+#descriptionTextContainer > h1 {
+    font-family: caveat, cursive;
+    font-size: 50pt;
+    margin-top: 0;
+}
+#descriptionTextContainer > p {
+    margin: 2.5vh auto 0;
+    font-size: 18pt;
+    max-width: 900px;
+
 }
 .mainContainer {
     display: flex;
@@ -112,9 +158,12 @@ main {
     align-items: center;
     /* style */
     padding: 40px;
-    background-color: rgb(235, 235, 235);
+    background-color: white /*rgb(235, 235, 235)*/;
     margin-bottom: 100px;
     border-radius: 75px;
+    border-bottom: solid 5px grey;
+    border-right: solid 5px grey;
+    box-shadow: 5px 5px 30px black;
 }
 .textContainer {
    width: 80%;
@@ -122,8 +171,14 @@ main {
 }
 .contentContainer > h2 {
     font-family: caveat, cursive;
-    font-size: 40pt;
+    font-size: 50pt;
     text-align: center;
+}
+.textContainer > h3 {
+    font-size: 20pt;
+}
+.textContainer > p {
+    font-size: 15pt;
 }
 .contentContainer > p {
     margin-top: 0;
