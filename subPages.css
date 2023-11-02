@@ -1,8 +1,7 @@
 header {
     position: fixed;
 }
-
-#subLandingContainer > h1 {
+.subpageMainContainer > h1 {
     /* position */
     display: flex;
     justify-content: center;
@@ -14,10 +13,28 @@ header {
     font-family: caveat, cursive;
     font-size: 80pt;
 }
-
-.contentContainer {
+.subpageMainContainer {
+    background: lightgrey url("./images/geometric.jpg") repeat;
+    background-size: contain;
+    width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+.subpageContentContainer {
+    /* position */
     width: 50%;
-    margin-bottom: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    /* style */
+    padding: 40px;
+    background-color: white /*rgb(235, 235, 235)*/;
+    margin: 100px 0;
+    border-radius: 75px;
+    border-bottom: solid 5px grey;
+    border-right: solid 5px grey;
+    box-shadow: 5px 5px 30px black;
 }
 h2 {
     font-size: 30pt;
