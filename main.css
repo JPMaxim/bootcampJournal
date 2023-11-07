@@ -10,17 +10,15 @@ body {
 }
 
 /* HEADER AND FOOTER */
-header, footer {
-    font-family: caveat, cursive;
-    background-image: linear-gradient(to bottom right, white, grey);
-    color: black;
-    min-height: 80px;
-    height: auto;
-    width: 100vw;
-}
 header {
     position: absolute;
     opacity: 0.75;
+}
+nav, footer {
+    font-family: caveat, cursive;
+    background-image: linear-gradient(to bottom right, white, grey);
+    height: 80px;
+    width: 100vw;
 }
 footer > p {
     margin:0;
@@ -33,20 +31,50 @@ nav, .navContainer {
     width: 75%;
     margin: auto;
     font-size: 18pt;
+    height: inherit;
 }
-
+#subnavContainer {
+    height: 40px;
+    display: none;
+    background-color: lightgrey;
+}
+#subnavContainer > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+#subnavContainer > ul > li {
+    /* display: flex; */
+    align-items: center;
+    width: 100px;
+}
+#subnavLinks {
+    display: none;
+}
+li > a {
+    font-family: caveat, cursive;
+    font-size: 15pt;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+a:hover {
+    color: darkmagenta;
+}
 /* nav flexBox */
 .navContainer > ul {
     list-style-type: none;
     margin: 0;
     /* padding: top right bottom left */
-    padding: 20px 0 20px 0;
+    padding: 15px 0 15px 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: stretch;
-    min-height: 60px;
-    height: auto;
+    height: 50px;
 }
 .navContainer > ul > li {
     width: 14.286%;
@@ -91,20 +119,48 @@ nav, .navContainer {
 main {
 }
 #heroContainer {
+    z-index: 0.9;
     font-family: caveat, cursive;
     width: 100%;
     background: white url("./images/hero.jpg") no-repeat;
     background-size: cover;
-    max-height: 100vh;
+    max-height: 80vh;
     /* height is set with JS setHeroHeight() onload */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 #siteTitle {
-    font-size: 110pt;
+    font-size: 90pt;
     margin: 0;
-    padding-bottom: 45vh;
+    margin-top: 110px;
+    /* padding-bottom: 45vh; */
+}
+.landingMenu {
+    z-index: 1;
+    position: absolute;
+    height:15vh;
+    width: 100vw;
+    top: 65vh;
+    display: flex;
+    justify-content: center;
+}
+.circlesContainer {
+    height: inherit;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#currentCircle {
+    background-color: rgb(170, 170, 170);
+}
+.circle {
+    width: 10%;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    border: solid 3px grey;
 }
 @keyframes descriptionBackground {
     0% {background-size: 10px 6.6px;}
@@ -112,7 +168,7 @@ main {
 } 
 #descriptionContainer {
     width: 100vw;
-    min-height: 800px;
+    min-height: 600px;
     height: auto;
     background: rgb(235, 235, 235) url("./images/pebbledash.jpg") repeat;
     background-size: 10px 6.6px;
@@ -137,13 +193,13 @@ main {
 }
 #descriptionTextContainer > h1 {
     font-family: caveat, cursive;
-    font-size: 40pt;
+    font-size: 35pt;
     margin-top: 0;
 }
 #descriptionTextContainer > p {
     margin: 2.5vh auto 0;
-    font-size: 15pt;
-    max-width: 900px;
+    font-size: 13pt;
+    max-width: 600px;
 
 }
 .mainContainer {

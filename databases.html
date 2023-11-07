@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jono's Journal - Databases</title>
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="./main.css">
+    <link type="text/css" rel="stylesheet" href="./subPages.css">
+    <!-- Icon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/siteIcon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navContainer">
+                <ul>
+                    <li class="navLinks">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="./codewars.html">Javascript</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="#">JS DOM</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="./css.html">CSS</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="./databases.html">Databases</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="#">Project Management</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="#">C#</a>
+                    </li>
+                </ul>
+            </div>            
+        </nav>
+        <div id="subnavContainer">
+            <div id="subnavSpacer"></div>
+            <ul id="subnavItemsContainer">
+                <li id="javascript1" class="subnavLinks">
+                    <a href="./codewars.html">week 1-3s</a>
+                </li>
+                <li id="javascript2" class="subnavLinks">
+                    <a href="./codewars.html#week5">week 5</a>
+                </li>
+                <li id="jsDom1" class="subnavLinks">
+                    <a href="./#.html">week 1</a>
+                </li>
+                <li id="jsDom2" class="subnavLinks">
+                    <a href="./#.html">week 2</a>
+                </li>
+                <li id="css1" class="subnavLinks">
+                    <a href="./#.html">week 1</a>
+                </li>
+                <li id="css2" class="subnavLinks">
+                    <a href="./#.html">week 2</a>
+                </li>
+                <li id="databases1" class="subnavLinks">
+                    <a href="./#.html">week 1</a>
+                </li>
+                <li id="databases2" class="subnavLinks">
+                    <a href="./#.html">week 2</a>
+                </li>
+                <li id="projman1" class="subnavLinks">
+                    <a href="./#.html">week 1</a>
+                </li>
+                <li id="projman2" class="subnavLinks">
+                    <a href="./#.html">week 2</a>
+                </li>
+                <li id="cSharp1" class="subnavLinks">
+                    <a href="./#.html">week 1</a>
+                </li>
+                <li id="cSharp2" class="subnavLinks">
+                    <a href="./#.html">week 2</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="subpageMainContainer"> 
+            
+            <h1>Databases</h1>
+
+            <div class="subpageContentContainer">                
+
+                <div class="textContainer">
+                    <h2>Database Fundamentals</h2>
+                    <p>A database is a collection of organized and structured data that is stored and managed in a way that allows for efficient retrieval and modification of the data.</p>
+                    <h3>Key features</h3>
+                    <ul>
+                        <li>Records (rows)</li>
+                        <li>Attributes/fields (columns)</li>
+                        <li>Primary Key - Unique Identifier for each record of a table</li>
+                        <li>Data Types</li>
+                    </ul>
+                    <h3>Common Database activities</h3>
+                    <ul>
+                        <li>Add records</li>
+                        <li>Edit records</li>
+                        <li>Delete records</li>
+                        <li>Search for records that meet criteria</li>
+                    </ul>
+                </div>
+                <img src="./images/databaseFundamentals.png">
+            </div>
+
+            <div class="subpageContentContainer">                
+
+                <div class="textContainer">
+
+                    <h2>SQL Queries</h2>
+                    <h3>Select Top</h3>
+                    <p>The <i>SELECT TOP</i> clause is used to specify the number of records to return, starting from the first:</p>
+                    <img src="./images/selectTop.png">
+
+                    <h3>Min and Max</h3>
+                    <p>The <i>MIN()</i> and <i>MAX()</i> functions return the smallest or largest value from a specified column:</p>
+                    <img src="./images/minAndmax.png">
+                    <h3>Count, Sum and Avg</h3>
+                    <p>The <i>COUNT()</i> function returns the number of rows that matches a specified criteria. <i>SUM()</i> returns the sum of a numeric column, and <i>AVG()</i> returns the average of a numeric column:</p>
+                    <img src="./images/count.png">
+                    <h3>Like and Wildcards</h3>
+                    <p>The <i>LIKE</i> operator is used in a WHERE clause with <i>wildcards</i> to search for a specified pattern in a column. <br>The percent wildcard %, represents zero, one, or multiple characters. <br>The underscore wildcard _, represents one, single character</p>
+                    <img src="./images/wildcards.png">
+                    <h3>In and Between</h3>
+                    <p>The <i>IN</i> operator allows you to specify multiple values in a WHERE clause. <br>The <i>BETWEEN</i> operator selects values within a given range. The values can be numbers, text, or dates.</p>
+                </div>
+                <button>
+                    <a href="./sql/Databases Task 2 - Jonny Maxim (1).docx">See My SQL Queries Activity</a>
+                </button>
+            </div>
+
+
+            <div class="subpageContentContainer">                
+
+                <div class="textContainer">
+                    <h2>Relational Databases</h2>
+                    <h3>Data Inconsistency</h3>
+                    <p>In flat-file databses, data can occur more than once and can lead to data inconsistency where one record of the data is changed but the other is not and they contradict.</p>
+                    <h3>Data Redundancy</h3>
+                    <p>Data occuring more than once place in a database is wasteful on storage and can lead to those inconsistencies. So we use relational databases.</p>
+                    <p><strong>Relational Databases</strong>  are more <strong>flexible</strong> (easier to add and change), <strong>accurate</strong> (less redunancy and inconsistency), and <strong>secure</strong> (you can make some entities read only or limited access).</p>
+                </div>
+            </div>
+            
+            <div class="subpageContentContainer">
+                <div class="textContainer">
+                    <h2>Database Relationship Types</h2>
+                    <h3>Types of database relationship</h3>
+                    <p>The relationship between databases can be:</p>
+                    <ul>
+                        <li>One to One</li>
+                        <li>One to Many</li>
+                        <li>Many to Many</li>
+                    </ul>
+                    <p>In other words:</p> 
+                    <ul>
+                        <li>Any one record in a table relates to only 1 record in another table.</li>
+                        <li>Any one record in a table can relate to multiple records in another table.</li>
+                        <li>Multiple records in a table can relate to multiple records in another table.</li>
+                    </ul>
+                    <p><strong>Many to many</strong> relationships cause problems with data inconsistency, updating difficulty and repeated data. You aviod them by creating <strong>bridging tables</strong></p>
+                </div>
+                <img id="bridgingTables" src="./images/bridgingTables.png">                
+            </div>
+            <div class="subpageContentContainer">
+                <div class="textContainer">
+                    <h2>Normalisation</h2>
+                    <h3>First Normal Form</h3>
+                    <p>A table in <strong>first</strong> normal form follows these criteria:</p>
+                    <ul>
+                        <li>A single cell holds strictly one value (atomicity).</li>
+                        <li>A primary key exists for each record.</li>
+                        <li>No duplicated rows or columns</li>
+                    </ul>
+                    <h3>Second Normal Form</h3>
+                    <p>A table in <strong>second</strong> normal form follows these criteria:</p>
+                    <ul>
+                        <li>Meets all criteria of 1NF</li>
+                        <li>It has no partial dependancy</li>
+                    </ul>
+                    <p><strong>Partial Dependancy</strong> is where a piece of data is not solely dependant on the primary key.</p>
+                    <h3>Third Normal Form</h3>
+                    <p>For <strong>third</strong> normal form, there must be no <strong>transitive functional dependancy</strong>. Every attribute that is not the primary key must depend on the primary key and the primary key only.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+    
+    <!-- JS  -->
+    <script src="./main.js"></script>
+</body>
+</html>

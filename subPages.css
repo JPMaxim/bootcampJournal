@@ -8,10 +8,13 @@ header {
     align-items: center;
     height: 25vh;
     margin: 0;
-    padding-top: 60px;
+    margin-top: 110px;
     /* style */
     font-family: caveat, cursive;
     font-size: 80pt;
+}
+.subpageMainContainer > p {
+    width: 50%;
 }
 .subpageMainContainer {
     background: lightgrey url("./images/geometric.jpg") repeat;
@@ -42,4 +45,7 @@ h2 {
 }
 .textContainer > p {
     font-size: 13pt;
+}
+#plantsImg, #executionContext, #bridgingTables {
+    width: 500px;
 }
