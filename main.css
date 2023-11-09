@@ -3,7 +3,8 @@
 
 body {
     font-family: 'Playpen Sans', cursive;
-    background-color: white;
+    background: lightgrey url("./images/blueGradient.jpg") fixed;
+    background-size: cover;
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -162,50 +163,60 @@ main {
     border-radius: 20px;
     border: solid 3px grey;
 }
+main {
+    background: lightgrey url("./images/blueGradient.jpg") fixed;
+    background-size: cover;
+}
 @keyframes descriptionBackground {
     0% {background-size: 10px 6.6px;}
-    100% {background-size: 9.8px 6.6px;}
+    100% {background-size: 9.8px 6.2px;}
 } 
 #descriptionContainer {
     width: 100vw;
-    min-height: 600px;
-    height: auto;
-    background: rgb(235, 235, 235) url("./images/pebbledash.jpg") repeat;
     background-size: 10px 6.6px;
-    /* animation: name, duration, timing-function, delay,  iteration */
-    animation: descriptionBackground linear 3s infinite alternate;
     display:flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 0;
 }
 #descriptionTextContainer {
+    background: rgb(235, 235, 235) url("./images/pebbledash.jpg") repeat;
+    /* animation: name, duration, timing-function, delay,  iteration */
+    animation: descriptionBackground linear 3s infinite alternate;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: center;
-    background-color: white;
-    border-radius: 300px;
-    padding: 100px;
+    border-radius: 100px;
+    padding: 15px 75px 40px;
     width: 50%;
-    border-bottom: solid 5px grey;
-    border-right: solid 5px grey;
-    box-shadow: 5px 5px 30px black;
+    /* border: solid 5px grey;
+    box-shadow: 5px 5px 5px grey; */
 }
 #descriptionTextContainer > h1 {
+    text-shadow:
+      1px 1px 0 white,
+      -1px 1px 0 white,
+      -1px -1px 0 white,
+      1px -1px 0 white;
     font-family: caveat, cursive;
     font-size: 35pt;
-    margin-top: 0;
+    margin: 0;
+    padding: 10px;
 }
 #descriptionTextContainer > p {
+    text-shadow:
+      0.75px 0.75px 0 white,
+      -0.75px 0.75px 0 white,
+      -0.75px -0.75px 0 white,
+      0.75px -0.75px 0 white;
     margin: 2.5vh auto 0;
-    font-size: 13pt;
+    font-size: 11pt;
     max-width: 600px;
 
 }
 .mainContainer {
     display: flex;
-    background: lightgrey url("./images/geometric.jpg") repeat;
-    background-size: contain;
     color:black;
 }
 .LeftAndRightContainer {
@@ -228,7 +239,7 @@ main {
     border-radius: 75px;
     border-bottom: solid 5px grey;
     border-right: solid 5px grey;
-    box-shadow: 5px 5px 30px black;
+    box-shadow: 5px 5px 30px grey;
 }
 .textContainer {
    width: 80%;
