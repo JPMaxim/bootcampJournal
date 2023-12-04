@@ -22,13 +22,13 @@
                         <a href="./codewars.html">Javascript</a>
                     </li>
                     <li class="navLinks">
-                        <a href="#">JS DOM</a>
+                        <a href="./jsDom.html">JS DOM</a>
                     </li>
                     <li class="navLinks">
                         <a href="./css.html">CSS</a>
                     </li>
                     <li class="navLinks">
-                        <a href="./databases.html">Databases</a>
+                        <a class="currentPageLink" href="./databases.html">Databases</a>
                     </li>
                     <li class="navLinks">
                         <a href="#">Project Management</a>
@@ -84,124 +84,191 @@
 
     <main>
 
+        <div class="aside">
+            <div class="asideFlexContainer">
+                <div class="asideMainHeading">
+                    <h2>Bookmarks</h2>
+                </div>
+                <div class="asideBox">
+                    <h3><a href="./databases.html">Database Fundamentals</a></h3>
+                    <h4>Learning - <a href="./databases.html">week 2</a></h4>
+                    <p>Key features. Common uses.</p>
+
+                </div>
+                <div class="asideBox">
+                    <h3><a href="./databases.html#week3-5">Relational Databases</a></h3>
+                    <h4>Learning - <a href="./databases.html#week3-5">week 3-5</a></h4>
+                    <p>Data Inconsistency and Redundancy. Types of database relationship.</p>
+                </div>
+                <div class="asideBox">
+                    <h3><a href="./databases.html#normalisation">Normalisation</a></h3>
+                    <h4>Learning - <a href="./databases.html#normalisation">week 5</a></h4>
+                    <p>1st normal form, 2nd normal form, and 3rd normal form</p>
+                </div>
+                <div class="asideBox">
+                    <h3><a href="./databases.html#miniproj">Mini Project</a></h3>
+                    <h4>Project - <a href="./databases.html#miniproj">week 5</a></h4>
+                    <p>An exercise putting together all I've learnt on SQL through the bootcamp.</p>
+                </div>
+                <div class="asideBox">
+                    <h3><a href="./databases.html#week8">Using Node.js with MongoDB Atlas</a></h3>
+                    <h4>Project - <a href="./databases.html#week8">week 8</a></h4>
+                    <p>Using VSCode to perform CRUD functions on a MongoDB database.</p>
+                </div>
+            </div>
+        </div>
+
         <div class="subpageMainContainer"> 
+            <div class="marginRightContainer">  
+
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
             
-            <h1>Databases</h1>
-
-            <div class="subpageContentContainer">                
-
-                <div class="textContainer">
-                    <h2>Database Fundamentals</h2>
-                    <p>A database is a collection of organized and structured data that is stored and managed in a way that allows for efficient retrieval and modification of the data.</p>
-                    <h3>Key features</h3>
-                    <ul>
-                        <li>Records (rows)</li>
-                        <li>Attributes/fields (columns)</li>
-                        <li>Primary Key - Unique Identifier for each record of a table</li>
-                        <li>Data Types</li>
-                    </ul>
-                    <h3>Common Database activities</h3>
-                    <ul>
-                        <li>Add records</li>
-                        <li>Edit records</li>
-                        <li>Delete records</li>
-                        <li>Search for records that meet criteria</li>
-                    </ul>
+                        <h1>Databases</h1>          
+                        <h2>Database Fundamentals</h2>
+                        <h3>Week 2</h3>
+                        <p>A database is a collection of organized and structured data that is stored and managed in a way that allows for efficient retrieval and modification of the data.</p>
+                        <h4>Key features</h4>
+                        <ul>
+                            <li>Records (rows)</li>
+                            <li>Attributes/fields (columns)</li>
+                            <li>Primary Key - Unique Identifier for each record of a table</li>
+                            <li>Data Types</li>
+                        </ul>
+                        <h4>Common Database activities</h4>
+                        <ul>
+                            <li>Add records</li>
+                            <li>Edit records</li>
+                            <li>Delete records</li>
+                            <li>Search for records that meet criteria</li>
+                        </ul>
+                        <img src="./images/databaseFundamentals.png">
+                    </div>
                 </div>
-                <img src="./images/databaseFundamentals.png">
-            </div>
 
-            <div class="subpageContentContainer">                
+                <div class="subpageContentContainer">             
+                    <div class="subpageContent">
 
-                <div class="textContainer">
+                        <h2>SQL Queries</h2>
+                        <h4>Select Top</h4>
+                        <p>The <i>SELECT TOP</i> clause is used to specify the number of records to return, starting from the first:</p>
+                        <img src="./images/selectTop.png">
 
-                    <h2>SQL Queries</h2>
-                    <h3>Select Top</h3>
-                    <p>The <i>SELECT TOP</i> clause is used to specify the number of records to return, starting from the first:</p>
-                    <img src="./images/selectTop.png">
-
-                    <h3>Min and Max</h3>
-                    <p>The <i>MIN()</i> and <i>MAX()</i> functions return the smallest or largest value from a specified column:</p>
-                    <img src="./images/minAndmax.png">
-                    <h3>Count, Sum and Avg</h3>
-                    <p>The <i>COUNT()</i> function returns the number of rows that matches a specified criteria. <i>SUM()</i> returns the sum of a numeric column, and <i>AVG()</i> returns the average of a numeric column:</p>
-                    <img src="./images/count.png">
-                    <h3>Like and Wildcards</h3>
-                    <p>The <i>LIKE</i> operator is used in a WHERE clause with <i>wildcards</i> to search for a specified pattern in a column. <br>The percent wildcard %, represents zero, one, or multiple characters. <br>The underscore wildcard _, represents one, single character</p>
-                    <img src="./images/wildcards.png">
-                    <h3>In and Between</h3>
-                    <p>The <i>IN</i> operator allows you to specify multiple values in a WHERE clause. <br>The <i>BETWEEN</i> operator selects values within a given range. The values can be numbers, text, or dates.</p>
+                        <h4>Min and Max</h4>
+                        <p>The <i>MIN()</i> and <i>MAX()</i> functions return the smallest or largest value from a specified column:</p>
+                        <img src="./images/minAndmax.png">
+                        <h4>Count, Sum and Avg</h4>
+                        <p>The <i>COUNT()</i> function returns the number of rows that matches a specified criteria. <i>SUM()</i> returns the sum of a numeric column, and <i>AVG()</i> returns the average of a numeric column:</p>
+                        <img src="./images/count.png">
+                        <h4>Like and Wildcards</h4>
+                        <p>The <i>LIKE</i> operator is used in a WHERE clause with <i>wildcards</i> to search for a specified pattern in a column. <br>The percent wildcard %, represents zero, one, or multiple characters. <br>The underscore wildcard _, represents one, single character</p>
+                        <img src="./images/wildcards.png">
+                        <h4>In and Between</h4>
+                        <p>The <i>IN</i> operator allows you to specify multiple values in a WHERE clause. <br>The <i>BETWEEN</i> operator selects values within a given range. The values can be numbers, text, or dates.</p>
+                        <button>
+                            <a href="./sql/Databases Task 2 - Jonny Maxim (1).docx">See My SQL Queries Activity</a>
+                        </button>
+                    </div>
                 </div>
-                <button>
-                    <a href="./sql/Databases Task 2 - Jonny Maxim (1).docx">See My SQL Queries Activity</a>
-                </button>
-            </div>
 
 
-            <div class="subpageContentContainer" id="week3-5">                
-
-                <div class="textContainer" >
-                    <h2>Relational Databases</h2>
-                    <h3>Data Inconsistency</h3>
-                    <p>In flat-file databses, data can occur more than once and can lead to data inconsistency where one record of the data is changed but the other is not and they contradict.</p>
-                    <h3>Data Redundancy</h3>
-                    <p>Data occuring more than once place in a database is wasteful on storage and can lead to those inconsistencies. So we use relational databases.</p>
-                    <p><strong>Relational Databases</strong>  are more <strong>flexible</strong> (easier to add and change), <strong>accurate</strong> (less redunancy and inconsistency), and <strong>secure</strong> (you can make some entities read only or limited access).</p>
+                <div class="subpageContentContainer" id="week3-5">              
+                    <div class="subpageContent">
+                        <h2>Relational Databases</h2>
+                        <h3>Weeks 3-5</h3>
+                        <h4>Data Inconsistency</h4>
+                        <p>In flat-file databses, data can occur more than once and can lead to data inconsistency where one record of the data is changed but the other is not and they contradict.</p>
+                        <h4>Data Redundancy</h4>
+                        <p>Data occuring more than once place in a database is wasteful on storage and can lead to those inconsistencies. So we use relational databases.</p>
+                        <p><strong>Relational Databases</strong>  are more <strong>flexible</strong> (easier to add and change), <strong>accurate</strong> (less redunancy and inconsistency), and <strong>secure</strong> (you can make some entities read only or limited access).</p>
+                    </div>
+                </div>
+                
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Database Relationship Types</h2>
+                        <h4>Types of database relationship</h4>
+                        <p>The relationship between databases can be:</p>
+                        <ul>
+                            <li>One to One</li>
+                            <li>One to Many</li>
+                            <li>Many to Many</li>
+                        </ul>
+                        <p>In other words:</p> 
+                        <ul>
+                            <li>Any one record in a table relates to only 1 record in another table.</li>
+                            <li>Any one record in a table can relate to multiple records in another table.</li>
+                            <li>Multiple records in a table can relate to multiple records in another table.</li>
+                        </ul>
+                        <p><strong>Many to many</strong> relationships cause problems with data inconsistency, updating difficulty and repeated data. You aviod them by creating <strong>bridging tables</strong></p>
+                        <img id="bridgingTables" src="./images/bridgingTables.png"> 
+                    </div>               
+                </div>
+                <div id="normalisation"class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Normalisation</h2>
+                        <h3>Weeks 3-5</h3>
+                        <h4>First Normal Form</h4>
+                        <p>A table in <strong>first</strong> normal form follows these criteria:</p>
+                        <ul>
+                            <li>A single cell holds strictly one value (atomicity).</li>
+                            <li>A primary key exists for each record.</li>
+                            <li>No duplicated rows or columns</li>
+                        </ul>
+                        <h4>Second Normal Form</h4>
+                        <p>A table in <strong>second</strong> normal form follows these criteria:</p>
+                        <ul>
+                            <li>Meets all criteria of 1NF</li>
+                            <li>It has no partial dependancy</li>
+                        </ul>
+                        <p><strong>Partial Dependancy</strong> is where a piece of data is not solely dependant on the primary key.</p>
+                        <h4>Third Normal Form</h4>
+                        <p>For <strong>third</strong> normal form, there must be no <strong>transitive functional dependancy</strong>. Every attribute that is not the primary key must depend on the primary key and the primary key only.</p>
+                    </div>
+                </div>
+                
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>JOIN</h2>
+                        <h4>INNER JOIN</h4>
+                        <p>The INNER JOIN keyword selects records that have matching values in both tables.</p>
+                        <p>I've been using this to use foreign keys to link between relational tables and run queries on data across multiple tables.</p>
+                    </div>
+                </div>
+                <div id="miniproj" class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>SQL Mini Project</h2>
+                        <h3>Week 5</h3>
+                        <p>An exercise putting together all I've learnt on SQL through the bootcamp.</p>
+                        <button id="week8"><a href="./sql/Jonny Maxim - SQL Mini Project.docx">See Mini Project</a></button>
+                    </div>
+                </div>
+                
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Using node.js with MongoDB Atlas</h2>
+                        <h3>Week 8</h3>
+                        <h4>Full Stack</h4>
+                        <p>This week we looked at:</p>
+                        <ul>
+                            <li id="connectFormToMongo"><a href="./databases.html#connectFormToMongo">Connecting a simple web form to a MongoDB database</a></li>
+                            <li><a href="./databases.html#insertRecord">Performing basic operations down the stack (insert record)</a></li>
+                            <li><a href="./databases.html#findRecord">Performing data retrieval up the stack (find record)</a></li>
+                        </ul>
+                        <h4>Key Terms</h4>
+                        <h5>API</h5>
+                        <p>Application Programming Interfaces (APIs) act as the middle man between two software programs. <br>They allow a user to communicate with a backend system through a UI. </p>
+                        <h5>Client</h5>
+                        <p><strong>The client is the person or software who uses the API.</strong> It can be a developer, for example you, as a developer, can use Twitter API to read and write data from Twitter, create a new tweet and do more actions in a program that you write. Your program will call Twitter’s API. <br>The client can also be a web browser. When you go to Twitter's website, your browser is the client who calls Twitter API and uses the returned data to render information on the screen.</p>
+                        <h5>Resource</h5>
+                        <p><strong>A resource can be any object the API can provide information about</strong>. In Instagram’s API, for example, a resource can be a user, a photo, a hashtag. Each resource has a unique identifier. The identifier can be a name or a number.</p>
+                        <h4>Connecting a simple web form to a MongoDB database</h4>
+                        <p></p>
+                        <h4>Performing basic operations down the stack</h4>
+                        <h4>Performing data retrieval up the stack</h4>
+                    </div>
                 </div>
             </div>
-            
-            <div class="subpageContentContainer">
-                <div class="textContainer">
-                    <h2>Database Relationship Types</h2>
-                    <h3>Types of database relationship</h3>
-                    <p>The relationship between databases can be:</p>
-                    <ul>
-                        <li>One to One</li>
-                        <li>One to Many</li>
-                        <li>Many to Many</li>
-                    </ul>
-                    <p>In other words:</p> 
-                    <ul>
-                        <li>Any one record in a table relates to only 1 record in another table.</li>
-                        <li>Any one record in a table can relate to multiple records in another table.</li>
-                        <li>Multiple records in a table can relate to multiple records in another table.</li>
-                    </ul>
-                    <p><strong>Many to many</strong> relationships cause problems with data inconsistency, updating difficulty and repeated data. You aviod them by creating <strong>bridging tables</strong></p>
-                </div>
-                <img id="bridgingTables" src="./images/bridgingTables.png">                
-            </div>
-            <div class="subpageContentContainer">
-                <div class="textContainer">
-                    <h2>Normalisation</h2>
-                    <h3>First Normal Form</h3>
-                    <p>A table in <strong>first</strong> normal form follows these criteria:</p>
-                    <ul>
-                        <li>A single cell holds strictly one value (atomicity).</li>
-                        <li>A primary key exists for each record.</li>
-                        <li>No duplicated rows or columns</li>
-                    </ul>
-                    <h3>Second Normal Form</h3>
-                    <p>A table in <strong>second</strong> normal form follows these criteria:</p>
-                    <ul>
-                        <li>Meets all criteria of 1NF</li>
-                        <li>It has no partial dependancy</li>
-                    </ul>
-                    <p><strong>Partial Dependancy</strong> is where a piece of data is not solely dependant on the primary key.</p>
-                    <h3>Third Normal Form</h3>
-                    <p>For <strong>third</strong> normal form, there must be no <strong>transitive functional dependancy</strong>. Every attribute that is not the primary key must depend on the primary key and the primary key only.</p>
-                </div>
-            </div>
-            
-            <div class="subpageContentContainer">
-                <div class="textContainer">
-                    <h2>JOIN</h2>
-                    <h3>INNER JOIN</h3>
-                    <p>The INNER JOIN keyword selects records that have matching values in both tables.</p>
-                    <p>I've been using this to use foreign keys to link between relational tables and run queries on data across multiple tables.</p>
-                </div>
-                <button><a href="./sql/Jonny Maxim - SQL Mini Project.docx">See Mini Project</a></button>
-            </div>
-
         </div>
     </main>
 

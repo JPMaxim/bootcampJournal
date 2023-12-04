@@ -17,8 +17,15 @@ header {
     align-content: center;
     padding-left: 20px;
 }
+.asideMainHeading {
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px black;
+}
 .asideBox {
-    height: 25%;
+    height: 23%;
     border-bottom: solid 1px black;
     display: flex;
     flex-flow: column nowrap;
@@ -36,22 +43,13 @@ header {
     font-size: 9pt;
     padding: 3px;
 }
-.asideBox > h3 > a {
-    text-decoration: none;
-    color: black;
-}
-.asideBox > h3 > a:hover {
-    color: darkmagenta;
-}
-.asideBox > h4 > a {
-    text-decoration: none;
-    color: black;
-}
-.asideBox > h4 > a:hover {
-    color: darkmagenta;
-}
 .asideBox > p {
     font-size: 8pt;
+}
+.asideBox > h3 > a,.asideBox > h4 > a {
+    /* text-decoration: underline;
+    text-decoration-color: rgb(40, 40, 40); */
+    border-bottom: solid 1px rgb(40, 40, 40);
 }
 .asideBox:last-child {border: none;
 }
@@ -61,22 +59,20 @@ header {
     width: 80vw;
     margin-left: 20vw;
     display: flex;
-    flex-flow: column wrap;
-    align-content: center;
+    justify-content: flex-start;
 }
-.subpagePaddingContainer {
-    /* position */
-    /* style */
-    padding-right: 40px;
+.marginRightContainer {
+    width: 95%;
 }
 .subpageContentContainer {
     border-bottom: solid 1px black;
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
 }
 .subpageContent {
-    max-width: 700px;
+    width: 700px;
     margin: auto;
     display: flex;
     flex-flow: column wrap;
@@ -107,9 +103,19 @@ header {
     font-size: 15pt;
     margin-bottom: 0;
 }
-.subpageContent > p {
+.subpageContent > h5 {
+    align-self: flex-start;
     font-size: 11pt;
 }
-#plantsImg, #executionContext, #bridgingTables {
-    width: 500px;
+.subpageContent > p {
+    font-size: 11pt;
+    align-self: flex-start;
+}
+.subpageContent > img {
+    max-width: 600px;
+    align-self: center;
+}
+#activity > img {
+    max-width: 600px;
+    align-self: flex-start;
 }

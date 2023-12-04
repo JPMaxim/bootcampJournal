@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jono's Journal - React</title>
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="./main.css">
+    <link type="text/css" rel="stylesheet" href="./subPages.css">
+    <!-- Icon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/siteIcon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navContainer">
+                <ul>
+                    <li class="navLinks">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="./codewars.html">Javascript</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="./jsDom.html">JS DOM</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="./css.html">CSS</a>
+                    </li>
+                    <li class="navLinks">
+                        <a class="currentPageLink" href="./react.html">React</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="./databases.html">Databases</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="#">Project Management</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="#">C#</a>
+                    </li>
+                </ul>
+            </div>            
+        </nav>
+        <div id="subnavContainer">
+            <div id="subnavSpacer"></div>
+            <ul id="subnavItemsContainer">
+                <li id="javascript1" class="subnavLinks">
+                    <a href="./codewars.html">weeks 1-3</a>
+                </li>
+                <li id="javascript2" class="subnavLinks">
+                    <a href="./codewars.html#week5">week 5</a>
+                </li>
+                <li id="jsDom1" class="subnavLinks">
+                    <a href="./#.html">week 1</a>
+                </li>
+                <li id="jsDom2" class="subnavLinks">
+                    <a href="./#.html">week 2</a>
+                </li>
+                <li id="css1" class="subnavLinks">
+                    <a href="./#.html">week 1</a>
+                </li>
+                <li id="css2" class="subnavLinks">
+                    <a href="./#.html">week 2</a>
+                </li>
+                <li id="databases1" class="subnavLinks">
+                    <a href="./databases.html">week 2</a>
+                </li>
+                <li id="databases2" class="subnavLinks">
+                    <a href="./databases.html#week3-5">weeks 3-5</a>
+                </li>
+                <li id="projman1" class="subnavLinks">
+                    <a href="./#.html">week 1</a>
+                </li>
+                <li id="projman2" class="subnavLinks">
+                    <a href="./#.html">week 2</a>
+                </li>
+                <li id="cSharp1" class="subnavLinks">
+                    <a href="./#.html">week 1</a>
+                </li>
+                <li id="cSharp2" class="subnavLinks">
+                    <a href="./#.html">week 2</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="aside">
+            <div class="asideFlexContainer">
+                <div class="asideMainHeading">
+                    <h2>Bookmarks</h2>
+                </div>
+                <div class="asideBox">
+                    <h3><a href="./react.html">React introduction</a></h3>
+                    <h4>Learning - <a href="./react.html">week 7</a></h4>
+                    <p>Key features. Installation.</p>
+
+                </div>
+                <div class="asideBox">
+                    <h3><a href="./react.html#firstComponent">My First Component</a></h3>
+                    <h4>Learning - <a href="./react.html#firstComponent">week 7</a></h4>
+                    <p>Building my first Component in React.</p>
+                </div>
+                <div class="asideBox">
+                    <h3><a href="./react.html#activity">Components Activity</a></h3>
+                    <h4>Progression - <a href="./react.html#activity">week 7</a></h4>
+                    <p>Using components to replicate screenshots from professional websites</p>
+                </div>
+                <div class="asideBox">
+                    <h3><a href="./react.html#state">State and Methods</a></h3>
+                    <h4>Learning - <a href="./react.html#state">week 7</a></h4>
+                    <p>Using the useState hook, map method, and updating state in React</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="subpageMainContainer"> 
+            <div class="marginRightContainer">  
+
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+            
+                        <h1>REACT</h1>          
+                        <h3>Week 7</h3>
+                        <h2>What is React?</h2>
+                        <p>A Javascript Library for creating <strong>interactive user interfaces</strong></p>
+                        <h2>How does React work?</h2>
+                        <p>We build a UI with <strong>components</strong> that can be reused anywhere in our <strong>application</strong>.</p>
+                        <h4>Key features</h4>
+                        <ul>
+                            <li><a href="./react.html#firstComponent">Components</a></li>
+                            <li><a href="./react.html#firstComponentProps">Props</a></li>
+                            <li><a href="./react.html#firstComponent">State and Methods</a></li>
+                            <li><a href="./react.html#firstComponent">Conditional Rendering and Controlled Components</a></li>
+                            <li><a href="./react.html#firstComponent">Lifecycle</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subpageContentContainer">             
+                    <div class="subpageContent">
+
+                        <h2>Components and JSX</h2>
+                        <h4>What is a Component?</h4>
+                        <p>A component is an independant reusable piece of code. <br>They come in two types: <strong>class components</strong> and <strong>functional components</strong>. <br>My understanding is that class components are somewhat outdated. I'll just be writing about and implementing functional components.</p>
+                        <img src="./images/classVsFunctional.png" />
+
+                        <h4>What is JSX?</h4>
+                        <p>JSX is a syntax extension to Javascript which acts somewhat like a template language but also comes with the full power of Javascript. <br>JSX produces React "elements".</p>
+                        <p><br>React renders our <strong>components</strong> to represent <strong>HTML elements</strong> (JSX).</p>
+
+                        <h4>Component Hierarchy</h4>
+                        <p>We can build our components in isolation, but they have to form a hierarchy with one root component when you use them</p>
+                        <img src="./images/componentTree.png">
+
+                        <h4>Virtual DOM</h4>
+                        <p>React creates a Virtual DOM, a lightweight version of the actual DOM. <br>When the state of our app changes, it changes the state of the virtual DOM. React compares the virtual DOM to the actual DOM and updates the actual DOM to match. </p>
+                        <p>This means that you no longer have to work with the DOM API in the browser. So no more <i>document.getElementBy...</i> as covered in JS DOM.</p>
+                        <p>If you change a component, React re-renders it and updates the DOM. This way the only thing that is re-rendered is the specific component rather than the entire application.</p>
+
+                        <h4>Using 'create-react-app'</h4>
+                        <p>
+                            You can use <i>create-react-app</i> in the terminal to create new React applications. <br>You first need to have it installed: <i>npm install create-react-app</i><br>Then you can create you app: <i>npx create-react-app app_name</i>
+                            <br>To start up the React server you run <i>npm start</i> in the terminal.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="subpageContentContainer" id="week3-5">              
+                    <div class="subpageContent">
+                        <h2>React App File Structure</h2>
+                        <h4>package.json</h4>
+                        <p>This file has the list of node dependencies which are needed.</p>
+                        <p>If you are stepping away from a project, you can delete the <i>node_modules</i> folder so that it's not taking up unnecessaryspace on your machine. <br>Because <i>package.json</i> contains all the tools needed for the React app, you can run <i>npm install</i> in the console anytime you want to return to the project and it will know all that it needs to install by reading <i>package.json</i>.</p>
+
+                        <h4>index.html</h4>
+                        <p>This will be the only HTML file in the project. All of the application components are loaded into the <i>id="root"</i> div.</p>
+
+                        <h4>index.js</h4>
+                        <p>This is the Javascript file that corresponds to the index.html.</p>
+                        <img src="./images/rootRendering.png"/>
+                        <p>The above lines tell you that the App component will be rendered into the div element with id="root".</p>
+
+                        <h4>App.js</h4>
+                        <p>This is the file for the App component. It's standard to capitalize the names for components. The App acts as the container for all other components.</p>
+                    </div>
+                </div>
+                
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>My First React App</h2>
+                        <p>In this segment I work through the first react app I made as a code-along while learning React. <br>It covers:</p>
+                        <ul>
+                            <li><a href="./react.html#firstComponent">My First Component</a></li>
+                            <li><a href="./react.html#firstComponentProps">Props</a></li>
+                            <li>#</li>
+                        </ul>
+                        <button id="firstComponent"><a href="#">See My First React App</a></button>
+                        <h4>My First Functional Component</h4>
+                        <p>I created a component called <i>Person</i> which returns an HTML element. In this case it will print out a sentence where it will tell you who the person's name is.</p>
+                        <img src="./images/firstFunctionalComponent.png"/>                        
+                        <h5 id="firstComponentProps">Import and Export</h5>
+                        <p>You need to export each component that you write and import them in App.js using the correct file path. <br>I store all the nested components of App in their own folder for tidyness.</p>
+
+                        <h4>Props</h4>
+                        <p>React takes the attributes we declare when it renders a component and turns them into an object.</p>
+                        <img src="./images/firstComponentProps.png"/>
+                        <p>We refer to these objects as props, and can pass them as arguements to our components</p>
+                        <img src="./images/propsArguement.png"/>
+                        <p><strong>Destructuring the variables</strong> means you don't have to keep using the props keyword everytime you use a prop variable. <br>You include the props in braces when you pass them as an arguement.</p>
+                        <p>Passing props is a way of passing data down the hierarchy of components.</p>
+                    </div>               
+                </div>
+
+                <div class="subpageContentContainer" id="activity">
+                    <div class="subpageContent">
+                        <h2>Components Activity</h2>
+                        <h3>Week 7</h3>
+                        <p>So in the first activity, creating my first components, I created my first component (Person) and then created one further nested component (Pet) and passed down props from App, to Person, to Pet. <br>Next I was set the activity of creating a section that uses components in the style of Netflix, BBC Sport and a Gallery. The brief was very simple: Use components and CSS to recreate the screenshots from the websites:</p>
+                        <img src="./images/componentsActivityBrief.png"/>
+                        <h4>Planning</h4>
+                        <p>I decided to have a container component for each website style that would act as a flex-box container. Then each container would call the respective component with the correct attributes for each box.</p>
+                        <img src="./images/activityComponentsTree.png">
+                        <h4>Development</h4>
+                        <figure>
+                            <figcaption>Final Result:</figcaption>
+                            <img src="./images/resultcomponentsActivity.png">
+                        </figure>
+                        <p>I'll talk through the BBC News middle section as the other two are more or less the same but slightly simpler.</p>
+                        <h5>App.js</h5>
+                        <p>Firstly in <i>App.js</i> I import the container components. Then in the App component, I have a heading and then call each container component:</p>
+                        <img src="./images/activityApp.png">
+                        <h5>BbcNewsContainer.js</h5>
+                        <p>In the <i>BbcNewsContainer</i> component I import the <i>BbcNews</i> component, as well as some strings I stored in a seperate folder, so that the code is cleaner and more readable. <br>For the images a screenshotted them from the brief and saved them in an images folder, then also imported those. <br>I give the return div a className to refer to in the CSS. The styling for the containers is simply display: flex with row direction and content centered, with a bit of margin above and below.</p>
+                        <img src="./images/bbcnewscontainer.png">
+                        <p>When <i>BbcNews</i> is called I pass the arguements:</p>
+                        <ul>
+                            <li><strong>img</strong>: Value is the image I imported from the images folder</li>
+                            <li><strong>heading</strong>: Value is the string imported from the text folder</li>
+                            <li><strong>paragraph</strong>: Value is again an imported string</li>
+                            <li><strong>time</strong>: Value is a string, which will be used for the article age</li>
+                            <li><strong>category</strong>: Value is a string, used for article category</li>
+                        </ul>
+                        <h5>BbcNews.js</h5>
+                        <img src="./images/activityBbcNewsComponent.png">
+                        <p id="state">I return a div with <i>className="bbcNews"</i> for the CSS. The styling for the componets is flexbox with column direction so that each element is stacked vertically. <br>The bottom p tag includes an emoji for the clock, and the time and category attributes seperated by a vertical bar. This replicates the look of the BBC News website really well.</p>
+                    </div>
+                </div>
+                
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>State and Methods</h2>
+                        <h4>What is State?</h4>
+                        <p>State refers to data or properties that need to be tracked in an application</p>
+                        <p>In functional components, we use a <strong>useState hook</strong> to track a state. <br>To use a useState hook in a component you have to import it into the component. You have to destructure it, (use {} on the import line), as it is a named export.</p>
+                        <figure>
+                            <img src="./images/setUseState.png">
+                            <figcaption>set the initial state</figcaption>
+                        </figure>
+                        <p>The useState function uses array destructuring, which returns two values, a variable for the current state (persons above) and a function to update the state (setPersons above).</p>
+                        <p>The useState variables can also be passed down the component tree as props.</p>
+
+                        <h4>JavaScript map() method</h4>
+                        <p>The <strong>map() method</strong> takes each element from an original array and transforms it with a function you specify. And then outputs a new array in the same order.</p>
+                        <p>So, you can use map() to iterate over an array to declare multiple instances of a component rather than calling it multiple times over multiple lines:</p>
+                        <img src="./images/iteratePerson.png">
+                        <p>We can use the 'index' parameter to identify the current index of persons when iterating over it with map():</p>
+                        <img src="./images/indexParameter.png">
+                        <h4>Updating the State</h4>
+                        <p>The first variable in our useState hook stores our current state. But as  users interact with an app, the state can change. <br>You can use a function to update the state:
+                        </p>
+                        <img src="./images/updateState.png">
+                        <p>I created a function <i>handleClick</i> that copies the state, makes a change to it and then updates the original state</p>
+                        <p>[...persons] - '...' is a spread operator and what it does is copy all of the elements of an array and store them in a new array</p>
+                        <p>Then I pass the function as a prop to the Person component with the index as it's arguement. I pass it as an anonymous function: ( () => function() ). This means that the function will only run once it is interacted with rather than running immediately</p>
+                        <p>In person the function is added to an event listener, <i>onClick</i>, and runs when the heading is clicked.</p>
+                    </div>
+                </div>
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Count Activity</h2>
+                        <p>I was set an activity to use a useState hook in order to construct a counter. When you hit a button it will either increment or decrement the count by updating the state:</p>
+                        <img src="./images/counter.png">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Conditional Rendering</h2>
+                        <p>In React, conditional rendering  provides the ability to render  different components, if a condition  is true or false.
+                        </p>
+                        <h4>Ternary Operator</h4>
+                        <p></p>
+                        <img src="./images/ternarySyntax.png">
+                        <p></p>
+                        <h4>Short Circuit Evaluation</h4>
+                        <p></p>
+                        <img src="./images/shortCircuitEvaluation.png">
+                        <h2>Forms in React</h2>
+                        <p>In React, form data is handled by components and stored in state.	Changes  are controlled by using the onChange
+                            attribute:
+                        </p>
+                        <img src="./images/reactForm.png">
+                        <p>The useState Hook will keep track of each  input value and provide a "single source  of truth" for the entire application.
+                        </p>
+                        <h4>Submitting Forms in React</h4>
+                        <p>In React you can have an input tag with attribute <i>type="submit"</i> to the form, as well as adding an <i>onSubmit</i> attribute to the form which calls a function you define to handke the submitted data.</p>
+                        <h2>Deployment</h2>
+                        <h4>Commit and push changes to github</h4>
+                        <p>When you create your React app it initializes a repository for you. So you just need to run:<br><i>git add .</i><br><i>git commit -m'first commit'</i></p>                            
+                        <p>Run the above lines every time you want to push changes to the git repository, obvs just change the text inside the quotes.</p>
+                        <p>Then create a new repository in your github account and choose to push an existing repository from the command line. Use the copy button to copy the command lines and paste them into the terminal you're using.</p>
+                        <p>Add "homepage": "<i>url for the seployed site e.g https://jpmaxim/github.io/repoName</i>" to <i>package.json</i></p>
+                        <p>Add the following attributes to the scripts property</p>
+                        <img src="./images/scriptsAttributes.png">
+                        <p>Run <i>npm install gh-pages --save-dev </i><br>Now run <i>npm run deploy</i>. A build folder will appear in the repository.</p>
+                        <p>Now just make sure in Settings/Pages in the github repository that the branch is gh-pages and it should go live.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+    
+    <!-- JS  -->
+    <script src="./main.js"></script>
+</body>
+</html>

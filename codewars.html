@@ -22,7 +22,7 @@
                         <a class="currentPageLink" href="./codewars.html">Javascript</a>
                     </li>
                     <li class="navLinks">
-                        <a href="#">JS DOM</a>
+                        <a href="./jsDom.html">JS DOM</a>
                     </li>
                     <li class="navLinks">
                         <a href="./css.html">CSS</a>
@@ -85,27 +85,40 @@
     <main>
         <div class="aside">
             <div class="asideFlexContainer">
+                <div class="asideMainHeading">
+                    <h2>Bookmarks</h2>
+                </div>
                 <div class="asideBox">
-                    <h3>Codewars</h3>
+                    <h3><a href="./codewars.html">Codewars</a></h3>
+                    <h4>Development - <a href="./codewars.html">week 2-3</a></h4>
+                    <p>Various Kata I've solved on Codewars. My Javascript progression</p>
 
                 </div>
                 <div class="asideBox">
-                    <h3><a href="">Javascript Engine</a></h3>
-                    <h4>Learning - <a href="#">week 5</a></h4>
+                    <h3><a href="./codewars.html#week5">Javascript Engine</a></h3>
+                    <h4>Learning - <a href="./codewars.html#week5">week 5</a></h4>
                     <p>What's an Engine? Context Execution and Memory. Call Stack and Event Loop.</p>
                 </div>
                 <div class="asideBox">
-                    <h3>Codewars</h3>
-
+                    <h3><a href="./codewars.html#asynchronous">Asynchronous</a></h3>
+                    <h4>Learning - <a href="./codewars.html#asynchronous">week 5</a></h4>
+                    <p>What's an Engine? Context Execution and Memory. Call Stack and Event Loop.</p>
                 </div>
                 <div class="asideBox">
-
+                    <h3><a href="./codewars.html#objectOriented">Object-Oriented</a></h3>
+                    <h4>Learning - <a href="./codewars.html#objectOriented">week 5</a></h4>
+                    <p>What's an Engine? Context Execution and Memory. Call Stack and Event Loop.</p>
+                </div>
+                <div class="asideBox">
+                    <h3><a href="./codewars.html#inquirer">Inquirer</a></h3>
+                    <h4>Learning - <a href="./codewars.html#inquirer">week 5</a></h4>
+                    <p>Using Inquirer to obtain an input from the user in node.js</p>
                 </div>
             </div>
         </div>
 
         <div class="subpageMainContainer"> 
-            <div class="subpagePaddingContainer">  
+            <div class="marginRightContainer">  
 
                 <div class="subpageContentContainer">
                     <div class="subpageContent">
@@ -123,130 +136,143 @@
                         <p>I wanted to try a 4 kyu Kata for a challenge and found this one called <i>Sum By Factors</i>. <br>The goal was, given an array of integers, to produce a sorted array of all prime factors and the sum of their multiples, in ascending order. For Example:</p>   
                         <img src="./images/sumByFactorsDemonstration.png">
                         <h4>My Solution</h4>
-                        <p>I used for loops and modulo to find all of the factors for each given number. Consider 16: <br>I would iterate over the numbers 2-16 and if 16 % i == 0, then i is a factor of 16. <br>I then defined a function that would check for prime and used this method to find all of the prime factors, then returned the sum.</p>
+                        <p>I used for loops and modulo to find all of the factors for each given number. Consider 16: <br>I would iterate over the numbers 2-16 and if 16 % i == 0, then i is a factor of 16. <br>I then defined a function that would check for prime and used this method to find all of the prime factors, then returned the sum.<br><a href="https://github.com/JPMaxim/journalWebsite/blob/master/codewars/sumByFactors.js">See script</a></p>
+
                         <h4>Issues I Encountered</h4>
                         <p>After an afternoon and a few error codes and corrections I got to the point where I had a working piece of code in VSCode. However, when I attempted on codewars I ran into an <strong>'Execution Timed Out'</strong> error. <br>The server only allows a certain amount of time for your code to execute before it cuts off, <strong>my code was too inefficient.</strong> <br>It took me quite some time to figure out how to optimize my algorithms. I found that there's an algorithm called <strong>The Sieve of Eratosthenes</strong> that more efficiently finds prime numbers. It does so by iteratively marking as composite(not prime), the multiples of each prime number found. In my code I assigned 50 multiples of each prime I found to an array and then used a conditional statement in order not to check for prime on any number already in the sieve array.<br>I also realised I could <strong>filter out a lot of unnecessary iterations</strong> on a particular function by changing the order of some code. Instead of checking if a number was prime and then checking if it was a factor, it was more optimal to check for factor first and only run those factors through the function that checks for prime.</p>
                         <h4>What I learned</h4>
                         <p>I think I got some valuable take-aways: Making a plan/design with some pseudocode and looking what methods and algorithms exist before diving in, to make more efficient code with less mistakes.  </p>
                     </div>
                 </div>
-            </div>
-            <div class="subpageContentContainer">
-                <div class="subpageContent">
-                    <h2>Various 7+kyu's invloving arrays</h2>
-                    <h3>week 2</h3>
-                    <p>I've been making life a lot harder for myself on some codewars kata and finding there are much better practices. It's been very valuable going through the solutions voted up as best practice after submitting a solution. Reason being that I've often found there's an array method that does what I spent about 10 lines doing straight away, LOL. Lesson learnt, know your methods. Also in general just have a look if there's a method that will do what you want to do before diving in I suppose.</p>
-                    <p>Here's an example: <br>This Kata, <i>Dominant array elements</i>, asks you take an array of integers, then output an array of all the integers that are larger than every other integer to it's right. My solution took just over 30 mins and was 23 lines long. Here's a lovely 1 line solution:</p>
+            
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Various 7+kyu's invloving arrays</h2>
+                        <h3>week 2</h3>
+                        <p>I've been making life a lot harder for myself on some codewars kata and finding there are much better practices. It's been very valuable going through the solutions voted up as best practice after submitting a solution. Reason being that I've often found there's an array method that does what I spent about 10 lines doing straight away, LOL. Lesson learnt, know your methods. Also in general just have a look if there's a method that will do what you want to do before diving in I suppose.</p>
+                        <p>Here's an example: <br>This Kata, <i>Dominant array elements</i>, asks you take an array of integers, then output an array of all the integers that are larger than every other integer to it's right. My solution took just over 30 mins and was 23 lines long. Here's a lovely 1 line solution:</p>
+                        <img src="./images/kataDominantArr.png">
+                        <p>The .filter() method creates a new array filled with elements that pass a test provided by a function. <br>The .slice() method slices out a piece of an array. <br>The .every() method returns true if every element returns true through a given function.</p>
+                        <h4>What I learned</h4>
+                        <p>Again, plan better and do a bit of research before writing the code. Still I find the 1 line pretty hard to get my head around, I likely wouldn't write a 1 liner yet but I do understand the methods and could definetely shorten it a lot from 23 lines.</p>                    
+                        <h4>Some Progression</h4>
+                        <p>Wednesday morning's codewars time went pretty well. I did another 7kyu called <i>Katastrophy</i> where, given: 1. an array of nested arrays (representing earthquake intensity) and 2. an integer (representing building age), you had to calculate if the building would stand against the earthquake. Without going super deep into it I was happy with my usage of .forEach() in order to calculate the earthquake magnitude rather than using lots of iterations like I previously have.</p>
+                        <img src="./images/katastrophy.png">
+                        <p>What happens here is on line 8, .forEach() calls a function for each nested array element in 'earthquake'. That function then calls another .forEach() on line 9 which goes through each element in the nested arrays and sums all elements. Now on line 10, back to the first .forEach() function, the code multiplies the sum of each array's elements together and assigns it to the product variable. For example:</p>
+                        <img src="./images/katastrophyEarthquakeDemonstration.png">
+                    </div>
                 </div>
-                <img src="./images/kataDominantArr.png">
-                <div class="textContainer">
-                    <p>The .filter() method creates a new array filled with elements that pass a test provided by a function. <br>The .slice() method slices out a piece of an array. <br>The .every() method returns true if every element returns true through a given function.</p>
-                    <h4>What I learned</h4>
-                    <p>Again, plan better and do a bit of research before writing the code. Still I find the 1 line pretty hard to get my head around, I likely wouldn't write a 1 liner yet but I do understand the methods and could definetely shorten it a lot from 23 lines.</p>                    
-                    <h4>Some Progression</h4>
-                    <p>Wednesday morning's codewars time went pretty well. I did another 7kyu called <i>Katastrophy</i> where, given: 1. an array of nested arrays (representing earthquake intensity) and 2. an integer (representing building age), you had to calculate if the building would stand against the earthquake. Without going super deep into it I was happy with my usage of .forEach() in order to calculate the earthquake magnitude rather than using lots of iterations like I previously have.</p>
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Plants and Zombies</h2>
+                        <h3>week 3</h3>
+                        <p>After completing Sum By Factors I've gone for another challenge and upped the difficulty to 3kyu this time. This Kata is a fun Sim-like challenge based on the PlantsVsZombies game. You have to calculate how many moves any given situation will last before the game ends.</p>
+                        <img id="plantsImg" src="./images/plantsMechanics.png">
+                        <h4>Analysis</h4>
+                        <p>First of all, I started by really analysing the task in order to understand what it was asking for: How the shooters work, how the zombies work, how the ending condition works. And then thinking what would be the best tools to use and best method in which to go about solving it. </p>
+                        <h4>Planning</h4>
+                        <p>A wrote down a plan in a notebook, which I've then been referring to while writing the code. It's really helped me stay on task without getting lost in what I've done or not done, or where I'm at in the process etc. <br>I broke the task into sections, starting with creating the variables and objects for the simulation, then breaking each turn into 4 sections: <br>1. Zombies moving, <br>2. Zombies spawning, <br>3. Pea shooters firing, <br>and 4. S shooters firing. <br>Then I iterate over those sections for each turn until a condition is fulfulled for the end and I declare an output.</p>
+                        <h4>Testing</h4>
+                        <p>Along the way I've been isolating parts of the code and running them in the terminal using logs and such to check that it's all working as planned. <br>No doubt it's much better doing it a bit at a time like this than writing out the whole code and potentially having loads of errors that would then be considerably harder to pinpoint and solve because there's so much more code!</p>
+                        <p>Once I've done with the development I'll test it in codewars and if needed, go back through previous steps to solve any errors. Until all being well I pass it and happy days.</p>
+                        <h4>First Attempt</h4>
+                        <p>I got to the point where in VSCode, I was getting a successful result for the given example. So I put it into codewars and gave it a test with crossed fingers and an optimistic hope of getting it first try... Nope keep dreaming&#128514; </p><p>I only got a sucessful result on the first test which was the given example and everything else failed. <br>Dissapointingly there's really nothing in the way of error messages and it doesn't show what the inputs are so I'm finding it really difficult to solve. I did see that the lawn(playing area) can be different sizes which I'd mistakenly assumed would always remain the same grid size, so I think that's going to be where the error is coming from. Back to the plan and onto attempt 2</p>
+                        <h4>Second Attempt</h4>
+                        <p>I went back through the code and made a few changes to accomodate for any possible size of array. <br> Again my code works in VSCode but when I put it into codewars I only get 1 succesful test and the rest fail. On the positive side I've fixed one issue and made a little progress but there's still an error I don't see.</p>
+                        <p>Going to be putting this one down as I've put a bit too much time into it, super dissapointing not to have a success at the end but at the end of the day it's all part of the process. Hopefully I can come back to it in future with fresh eyes and probably a bit more skill and experience and give it another go.</p>
+                    </div>
                 </div>
-                <img src="./images/katastrophy.png">
-                <div class="textContainer">
-                    <p>What happens here is on line 8, .forEach() calls a function for each nested array element in 'earthquake'. That function then calls another .forEach() on line 9 which goes through each element in the nested arrays and sums all elements. Now on line 10, back to the first .forEach() function, the code multiplies the sum of each array's elements together and assigns it to the product variable. For example:</p>
-                </div>
-                <img src="./images/katastrophyEarthquakeDemonstration.png">
-            </div>
-            <div class="subpageContentContainer">
-                <div class="textContainer">
-                    <h2>Plants and Zombies</h2>
-                    <p>After completing Sum By Factors I've gone for another challenge and upped the difficulty to 3kyu this time. This Kata is a fun Sim-like challenge based on the PlantsVsZombies game. You have to calculate how many moves any given situation will last before the game ends.</p>
-                </div>
-                <img id="plantsImg" src="./images/plantsMechanics.png">
-                <div class="textContainer">
-                    <h4>My Process</h4>
-                    <h4>Analysis</h4>
-                    <p>First of all, I started by really analysing the task in order to understand what it was asking for: How the shooters work, how the zombies work, how the ending condition works. And then thinking what would be the best tools to use and best method in which to go about solving it. </p>
-                    <h4>Planning</h4>
-                    <p>A wrote down a plan in a notebook, which I've then been referring to while writing the code. It's really helped me stay on task without getting lost in what I've done or not done, or where I'm at in the process etc. <br>I broke the task into sections, starting with creating the variables and objects for the simulation, then breaking each turn into 4 sections: <br>1. Zombies moving, <br>2. Zombies spawning, <br>3. Pea shooters firing, <br>and 4. S shooters firing. <br>Then I iterate over those sections for each turn until a condition is fulfulled for the end and I declare an output.</p>
-                    <h4>Development</h4>
-                    <p>Took the pseudo-code and wrote a script</p>
-                    <h4>Testing</h4>
-                    <p>Along the way I've been isolating parts of the code and running them in the terminal using logs and such to check that it's all working as planned. <br>No doubt it's much better doing it a bit at a time like this than writing out the whole code and potentially having loads of errors that would then be considerably harder to pinpoint and solve because there's so much more code!</p>
-                    <p>Once I've done with the development I'll test it in codewars and if needed, go back through previous steps to solve any errors. Until all being well I pass it and happy days.</p>
-                    <h4>First Attempt</h4>
-                    <p>I got to the point where in VSCode, I was getting a successful result for the given example. So I put it into codewars and gave it a test with crossed fingers and an optimistic hope of getting it first try... Nope keep dreaming&#128514; </p><p>I only got a sucessful result on the first test which was the given example and everything else failed. <br>Dissapointingly there's really nothing in the way of error messages and it doesn't show what the inputs are so I'm finding it really difficult to solve. I did see that the lawn(playing area) can be different sizes which I'd mistakenly assumed would always remain the same grid size, so I think that's going to be where the error is coming from. Back to the plan and onto attempt 2</p>
-                    <h4>Second Attempt</h4>
-                    <p>I went back through the code and made a few changes to accomodate for any possible size of array. <br> Again my code works in VSCode but when I put it into codewars I only get 1 succesful test and the rest fail. On the positive side I've fixed one issue and made a little progress but there's still an error I don't see.</p>
-                    <p>Going to be putting this one down as I've put a bit too much time into it, super dissapointing not to have a success at the end but at the end of the day it's all part of the process. Hopefully I can come back to it in future with fresh eyes and probably a bit more skill and experience and give it another go.</p>
-                </div>
-            </div>
 <!-- =======================
     JavaScript Engines
     ===================== -->
-            <div id="week5" class="subpageContentContainer">
-                <div class="textContainer">
-                    <h2>JavaScript Engines</h2>
-                    <h4>Engines</h4>
-                    <p>A JavaScript Engine executes JavaScript Code. I've been using Node.js as the engine for executing my code within VSCode. Since I've been using Chrome, the engine that they use to execute JavaScript in the browser is <i>V8 Engine</i>. </p>
+                <div id="week5" class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h1>Javascript Learning</h1>
+                        <h2>JavaScript Engines</h2>
+                        <h3>week 5</h3>
+                        <h4>Engines</h4>
+                        <p>A JavaScript Engine executes JavaScript Code. I've been using Node.js as the engine for executing my code within VSCode. Since I've been using Chrome, the engine that they use to execute JavaScript in the browser is <i>V8 Engine</i>. </p>
+                        <img src="./images/v8Engine.png">
+                        <h4>Execution Context and Memory Environment: Global and Local</h4>  
+                        <img id="executionContext" src="./images/executionContext.png">
+                        <p>Walking through the example above:<br>The engine starts on line 1 and assigns the variable <i>sumNum</i> to global memory with a value of 30. <br>On line 3, <i>addOne</i> is assigned to global memory as a function. <br>Next on line 7, the <i>console.log(..)</i> is run in the Execution context. <br>On line 8, the engine stores <i>newNum</i> in global memory and calls <i>addOne</i> with an arguement of 4. This starts a local Execution. <br>The arguement, <i>num</i>, is stored in local memory with value 4. From line 4, result is stored in local memory with value 5. <br>line 5 runs return in the local execution context which returns result. <br>And finally back to line 8, the value of result, (5), is assigned to newNum.</p>
+                        
+                        <h4>Call Stack, Memory Heap, Event Loop and Callback Queue</h4>
+                        <p>The <strong>call stack</strong> is responsible for <strong>keeping the flow of execution</strong> for our application. Without it, JavaScript wouldn’t know what to call or when.</p>
+                        <p>The <strong>heap</strong> is responsible for storing our data. This is where the <strong>memory allocation</strong> happens.</p>
+                        <p>Some functions such as <i>setTimeout()</i> aren't JavaScript functions and are run in <strong>Web Api's</strong>. Once these have executed in the Api they come to the <strong>event loop</strong> which puts them back in the Stack to be executed in our JavaScipt <strong>once the stack is empty</strong></p>
+                        <img src="./images/flowOfExecution.png">
+                    </div>
                 </div>
-                <img src="./images/v8Engine.png">
-                <div class="textContainer">
-                    <h4>Execution Context and Memory Environment: Global and Local</h4>                
-                </div>
-                <img id="executionContext" src="./images/executionContext.png">
-                <div class="textContainer">
-                    <p>Walking through the example above:<br>The engine starts on line 1 and assigns the variable <i>sumNum</i> to global memory with a value of 30. <br>On line 3, <i>addOne</i> is assigned to global memory as a function. <br>Next on line 7, the <i>console.log(..)</i> is run in the Execution context. <br>On line 8, the engine stores <i>newNum</i> in global memory and calls <i>addOne</i> with an arguement of 4. This starts a local Execution. <br>The arguement, <i>num</i>, is stored in local memory with value 4. From line 4, result is stored in local memory with value 5. <br>line 5 runs return in the local execution context which returns result. <br>And finally back to line 8, the value of result, (5), is assigned to newNum.</p>
+
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Scope and Higher Order Functions</h2>
+                        <h3>week 5</h3>
+                        <h4>Global Scope</h4>
+                        <p>Variables declared outside any function or iteration have global scope. They can be used anywhere in the program.</p>
+                        <h4>Function Scope</h4>
+                        <p>Javascript has function scope, meaning each function creates a new scope. Variables declared inside a function are not accessible from outside the function.</p>
+                        <h4>Block Scope</h4>
+                        <p>ES6 introduced let and const as well as block scope. Variables declared inside a block cannot be accessed outside a block.</p>
+                        <h4>Higher Order Functions</h4>
+                        <p>Higher order functions are functions which accept a function as a paramter or which return a function. <br>Consider:</p>
+                        <img src="./images/higherOrder.png">
+                        <p>The function <i>doMaths</i> is a <strong>higher order function</strong> because it returns another function. The function it returns is also higher order since it takes a function as a parameter and returns it.</p>
+                        <p><strong>Scope chain</strong> is demostrated as on line 43 the return function searches for the <i>fn</i> variable and finds it in the <strong>current scope</strong>. It then seaches for <i>num1</i> and doesn't find it in the current scope, so checks the <strong>previous scope</strong> and finds it. It then finds <i>num2</i> in the <strong>current scope</strong>.</p>
+                        <p>Line 46 calls the <i>doMaths</i> function and provides an arguement of 16, it then provides two arguements of 4, and the function <i>divide</i>, to the returned function.</p>
+                    </div>
                     
-                    <h4>Call Stack, Memory Heap, Event Loop and Callback Queue</h4>
-                    <p>The <strong>call stack</strong> is responsible for <strong>keeping the flow of execution</strong> for our application. Without it, JavaScript wouldn’t know what to call or when.</p>
-                    <p>The <strong>heap</strong> is responsible for storing our data. This is where the <strong>memory allocation</strong> happens.</p>
-                    <p>Some functions such as <i>setTimeout()</i> aren't JavaScript functions and are run in <strong>Web Api's</strong>. Once these have executed in the Api they come to the <strong>event loop</strong> which puts them back in the Stack to be executed in our JavaScipt <strong>once the stack is empty</strong></p>
                 </div>
-                <img src="./images/flowOfExecution.png">
-            </div>
 
-            <div class="subpageContentContainer">
-                <h2>Scope and Higher Order Functions</h2>
-                <div class="textContainer">
-                    <h4>Global Scope</h4>
-                    <p>Variables declared outside any function or iteration have global scope. They can be used anywhere in the program.</p>
-                    <h4>Function Scope</h4>
-                    <p>Javascript has function scope, meaning each function creates a new scope. Variables declared inside a function are not accessible from outside the function.</p>
-                    <h4>Block Scope</h4>
-                    <p>ES6 introduced let and const as well as block scope. Variables declared inside a block cannot be accessed outside a block.</p>
-                    <h4>Higher Order Functions</h4>
-                    <p>Higher order functions are functions which accept a function as a paramter or which return a function. <br>Consider:</p>
-                </div>
-                <img src="./images/higherOrder.png">
-                <div class="textContainer">
-                    <p>The function <i>doMaths</i> is a <strong>higher order function</strong> because it returns another function. The function it returns is also higher order since it takes a function as a parameter and returns it.</p>
-                    <p><strong>Scope chain</strong> is demostrated as on line 43 the return function searches for the <i>fn</i> variable and finds it in the <strong>current scope</strong>. It then seaches for <i>num1</i> and doesn't find it in the current scope, so checks the <strong>previous scope</strong> and finds it. It then finds <i>num2</i> in the <strong>current scope</strong>.</p>
-                    <p>Line 46 calls the <i>doMaths</i> function and provides an arguement of 16, it then provides two arguements of 4, and the function <i>divide</i>, to the returned function.</p>
-                </div>
                 
-            </div>
-
-            
-<!-- =======================
-    Asynchronous
-    ===================== -->
-            <div class="subpageContentContainer">
-                <div class="textContainer">
-                    <h2>Asynchronous</h2>
-                    <h4>JavaScipt Synchronous</h4>
-                    <p>JavaScript is synchronous, blocking and single-threaded. This means that the JavaScript engine executes our program sequentially, one line at a time from top to bottom in the exact order of the statements.</p>
-                    <h4>JavaScipt Asynchronous</h4>
-                    <p>Functions running in parallel with other functions are called asynchronous. <br>A good example is JavaScript setTimeout(). <br>Consider:</p>
+    <!-- =======================
+        Asynchronous
+        ===================== -->
+                <div id="asynchronous" class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Asynchronous</h2>
+                        <h3>week 5</h3>
+                        <h4>JavaScipt Synchronous</h4>
+                        <p>JavaScript is synchronous, blocking and single-threaded. This means that the JavaScript engine executes our program sequentially, one line at a time from top to bottom in the exact order of the statements.</p>
+                        <h4>JavaScipt Asynchronous</h4>
+                        <p>Functions running in parallel with other functions are called asynchronous. <br>A good example is JavaScript setTimeout(). <br>See example:</p>
+                        <img src="./images/asynchronous.png">
+                    </div>
                 </div>
-                <img src="./images/asynchronous.png">
-                <div class="textContainer">
-                    <h4>Promises</h4>
-                    <p>JavaScipt has a built in function type called a promise. It essentially promsies to do something once a function has completed.</p>
-                    <p>Promises have three states:</p>
-                    <ul>
-                        <li><strong>Pending</strong> - Currently running</li>
-                        <li><strong>Resolved</strong> - Finished running</li>
-                        <li><strong>Rejected</strong> - Failed, returns an error message to the user to explain what happened</li>
-                    </ul>
+
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Promises</h2>
+                        <h3>week 5</h3>
+                        <p>JavaScipt has a built in function type called a promise. It essentially promsies to do something once a function has completed.</p>
+                        <p>Promises have three states:</p>
+                        <ul>
+                            <li><strong>Pending</strong> - Currently running</li>
+                            <li><strong>Resolved</strong> - Finished running</li>
+                            <li><strong>Rejected</strong> - Failed, returns an error message to the user to explain what happened</li>
+                        </ul>
+                        <h4>async and await</h4>
+                    </div>
+                </div>
+
+                <div id="objectOriented"class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Object Oriented Programming</h2>
+                        <h3>week 5</h3>
+                        <h4>Classes</h4>
+                        <h4>Methods</h4>
+                    </div>
+                </div>
+
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Inquirer</h2>
+                        <h3>week 5</h3>
+                        <p>Using inquirer to get a user input in node.js</p>
+                    </div>
                 </div>
             </div>
-
         </div>
     </main>
 

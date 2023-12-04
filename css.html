@@ -22,7 +22,7 @@
                         <a href="./codewars.html">Javascript</a>
                     </li>
                     <li class="navLinks">
-                        <a href="#">JS DOM</a>
+                        <a href="./jsDom.html">JS DOM</a>
                     </li>
                     <li class="navLinks">
                         <a class="currentPageLink" href="./css.html">CSS</a>
@@ -84,49 +84,62 @@
 
     <main>
 
-        <div class="subpageMainContainer">  
+        <div class="aside">
+            <div class="asideFlexContainer">
+                <div class="asideMainHeading">
+                    <h2>Bookmarks</h2>
+                </div>
+                <div class="asideBox">
+                    <h3><a href="./css.html">CSS</a></h3>
+                    <h4>Development - <a href="./css.html">weeks 1-3</a></h4>
+                    <p>Things I've learnt and applied within CSS.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="subpageMainContainer"> 
+            <div class="marginRightContainer">  
+
+                <div class="subpageContentContainer">
+                    <div class="subpageContent"> 
             
-            <h1>CSS</h1>
-                                  
-            <div class="subpageContentContainer">
-                <div class="textContainer">
-                    <h2>Hero Img</h2>
-                    <p>I'm really happy with the landing on this journal site. I found a nice journal themed image and used the background shorthand selector to set it as the background-image. <br>I originally wanted the image to cover the entire viewport. I found this was pretty unresponsive though, forcing the image to cover an area that is of different dimensions to the image itself meant it would cut off a lot of the image and it looked pretty bad. </p><p>Eventually what I thought to do instead was set the width to 100%, and then use a JavaScript function to have the height be proportional to the width of the viewport. <br>So it doesn't always cover the whole viewport, but it's more responsive and always in the right proportions. See below:</p>
+                        <h1>CSS</h1>
+                        <h3>Weeks 1-3</h3>
+                        <h2>Hero Img</h2>
+                        <p>I'm really happy with the landing on this journal site. I found a nice journal themed image and used the background shorthand selector to set it as the background-image. <br>I originally wanted the image to cover the entire viewport. I found this was pretty unresponsive though, forcing the image to cover an area that is of different dimensions to the image itself meant it would cut off a lot of the image and it looked pretty bad. </p><p>Eventually what I thought to do instead was set the width to 100%, and then use a JavaScript function to have the height be proportional to the width of the viewport. <br>So it doesn't always cover the whole viewport, but it's more responsive and always in the right proportions. See below:</p>
+                        <img src="./images/heroHeight.png">
+                        <p>On lines 2&3, the .offsetWidth property returns the viewable width of <i>heroContainer</i>. Then the variable <i>heroHeight</i> is defined as 2/3rds of the offSetWidth. Line 6 then converts this number to a string and concatenates px. And finally <i>.style.height</i> selects the CSS height property for <i>heroContainer</i> and re-assigns it.</p><p>I also added a <i>max-height:100vh;</i> property. If the screen is wide enough the height will go past 100vh and I didn't want that. It just cuts off some of the bottom of the image which I think looks fine.</p><p>The function runs on the loading of the page. I did this by adding a <i>onload="setHeroHeight()"</i> attribute to the body. One downside is you have to hit refresh for the image to resize if you manually change the window size.</p>
+                    </div>
                 </div>
-                <img src="./images/heroHeight.png">
-                <div class="textContainer">
-                    <p>On lines 2&3, the .offsetWidth property returns the viewable width of <i>heroContainer</i>. Then the variable <i>heroHeight</i> is defined as 2/3rds of the offSetWidth. Line 6 then converts this number to a string and concatenates px. And finally <i>.style.height</i> selects the CSS height property for <i>heroContainer</i> and re-assigns it.</p><p>I also added a <i>max-height:100vh;</i> property. If the screen is wide enough the height will go past 100vh and I didn't want that. It just cuts off some of the bottom of the image which I think looks fine.</p><p>The function runs on the loading of the page. I did this by adding a <i>onload="setHeroHeight()"</i> attribute to the body. One downside is you have to hit refresh for the image to resize if you manually change the window size.</p>
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Nav bar</h2>
+                        <p>My Nav bar uses flexbox to position the navContainer in the centre of the page and to centre align each link container and text. </p><p>I've used media queries to change the width of the navContainer so it's either 50% on a large screen, 75% on a smaller laptop , and 100% on tablet or mobile.</p><p>I set the position of the header on the homepage as absolute, and on the other pages as fixed, and set the opacity to <i>0.75</i>. This means you can see behind the bar and I'm loving how it looks, especially with that landing hero image.</p><p>I used a gradient in the background, it transitions from white in the top left to grey in the bottom right. And I made a <i>currentPageLink</i> class to create a seperate background around the link for the page your currently on.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="subpageContentContainer">
-                <div class="textContainer">
-                    <h2>Nav bar</h2>
-                    <p>My Nav bar uses flexbox to position the navContainer in the centre of the page and to centre align each link container and text. </p><p>I've used media queries to change the width of the navContainer so it's either 50% on a large screen, 75% on a smaller laptop , and 100% on tablet or mobile.</p><p>I set the position of the header on the homepage as absolute, and on the other pages as fixed, and set the opacity to <i>0.75</i>. This means you can see behind the bar and I'm loving how it looks, especially with that landing hero image.</p><p>I used a gradient in the background, it transitions from white in the top left to grey in the bottom right. And I made a <i>currentPageLink</i> class to create a seperate background around the link for the page your currently on.</p>
-                </div>
-            </div>
-            <div class="subpageContentContainer">
-                <div class="textContainer">
-                    <h2>Transition and Animation</h2>
-                    <p>On the buttons such as the one at the bottom of this section, I've added some transition and animation CSS. The transition acts on the button and the anchor elements. <br>Triggered by the <i>:hover</i> selector, the button transitions from a black background to a white background with black border, and the anchor goes from <i>color:white</i> to <i>colour:black;</i> and <i>font-weight: 900;</i>.</p><p>The animation acts on the <i>button > a:hover</i> selector. I used the animation shorthand to define the name as flash, the duration as 1 second, timing-function as linear and delay as 1 second: </p>
-                </div>
-                <img src="./images/animation.png">
-                <div class="textContainer">
-                    <p>It's a basic animation to make the text flash. It changes the colour from black when 0% complete, to white when 20% complete, back to black when 40% complete and then repeats infinitely:</p>
-                </div>
-                <img src="./images/keyframes.png">
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Transition and Animation</h2>
+                        <p>On the buttons such as the one at the bottom of this section, I've added some transition and animation CSS. The transition acts on the button and the anchor elements. <br>Triggered by the <i>:hover</i> selector, the button transitions from a black background to a white background with black border, and the anchor goes from <i>color:white</i> to <i>colour:black;</i> and <i>font-weight: 900;</i>.</p><p>The animation acts on the <i>button > a:hover</i> selector. I used the animation shorthand to define the name as flash, the duration as 1 second, timing-function as linear and delay as 1 second: </p>
+                        <img src="./images/animation.png">
+                        <p>It's a basic animation to make the text flash. It changes the colour from black when 0% complete, to white when 20% complete, back to black when 40% complete and then repeats infinitely:</p>
+                        <img src="./images/keyframes.png">
                 
-                <button><a href="./css.html">HOVER HERE</a></button>
-            </div>
-            <div class="subpageContentContainer">
-                <div class="textContainer">
-                    <h2>Flexbox</h2>
-                    <p>Most sections on the site are using flexbox tbh! Take this section as a quick example:</p><p>The grey box has a class of <i>contentContainer</i> and has properties: display:flex; and flex-direction: column; <br>So all it's children are vertically stacked in columns. The property: align-items: center; centres the children horizontally.</p>
+                        <button><a href="./css.html">HOVER HERE</a></button>
+                    </div>
                 </div>
-            </div>
-            <div class="subpageContentContainer">
-                <div class="textContainer">
-                    <h2>Media Queries Responsivity</h2>
-                    <p>I've changed some font-sizes and widths to make the site look good on smaller devices. Still needs more work as of now. <br>I used <i>'@media only screen and (max-width: #px)</i> in order to specify at what screen widths the styling would change. <br>The main css code applies at widths over 1024px, then there's a media query for screens 768 < x < 1024, and then 600 < x < 768 (tablet), and then < 600 (mobile)</p>
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Flexbox</h2>
+                        <p>Most sections on the site are using flexbox tbh! Take this section as a quick example:</p><p>The grey box has a class of <i>contentContainer</i> and has properties: display:flex; and flex-direction: column; <br>So all it's children are vertically stacked in columns. The property: align-items: center; centres the children horizontally.</p>
+                    </div>
+                </div>
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+                        <h2>Media Queries Responsivity</h2>
+                        <p>I've changed some font-sizes and widths to make the site look good on smaller devices. Still needs more work as of now. <br>I used <i>'@media only screen and (max-width: #px)</i> in order to specify at what screen widths the styling would change. <br>The main css code applies at widths over 1024px, then there's a media query for screens 768 < x < 1024, and then 600 < x < 768 (tablet), and then < 600 (mobile)</p>
+                    </div>
                 </div>
             </div>
 
