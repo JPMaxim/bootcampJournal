@@ -97,3 +97,9 @@ for (item of subnavLinks) {
         subnavContainer.style.display = "flex";
     })
 }
+
+// Collapsable Week2 Section
+function CollapseWeek2Div() {
+    const week2Div = document.getElementById("week2Hidden")
+    week2Div.style.display == 'none' ? week2Div.style.display = 'block' : week2Div.style.display == 'none'
+}

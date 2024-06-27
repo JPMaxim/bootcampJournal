@@ -177,6 +177,7 @@ main {
     width: 100vw;
     background-size: 10px 6.6px;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 40px 0;
@@ -192,6 +193,7 @@ main {
     border-radius: 100px;
     padding: 15px 75px 40px;
     width: 50%;
+    margin-bottom: 30px;
     /* border: solid 5px grey;
     box-shadow: 5px 5px 5px grey; */
 }
@@ -214,8 +216,15 @@ main {
       0.75px -0.75px 0 white;
     margin: 2.5vh auto 0;
     font-size: 11pt;
+    font-weight: 600;
     max-width: 600px;
 
+} 
+.homepageLink {
+    color: rgb(2, 139, 139);
+}
+.homepageLink:hover {
+    color:blueviolet;
 }
 .mainContainer {
     display: flex;
@@ -304,6 +313,13 @@ button > a:hover {
     /* animation: name, duration, timing-function, delay,  iteration */
     animation: flash 1s linear 1s infinite;
 }
+#CollapseWeek2Div {
+    color: white;
+    margin: auto;
+}
+#CollapseWeek2Div:hover {
+    color: black
+}
 /* #codewarsContainer{
 } */
 #codewarsContainer > img {
@@ -312,12 +328,12 @@ button > a:hover {
 #cssContainer{
     margin-top: 400px;
 }
-/* jsDomContainer{
-
+footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 5vh;
 }
-databasesContainer{
-    
-} */
 
 /* laptop */
 @media only screen and (max-width: 1024px) {

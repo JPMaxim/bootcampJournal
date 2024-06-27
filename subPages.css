@@ -60,6 +60,7 @@ header {
     margin-left: 20vw;
     display: flex;
     justify-content: flex-start;
+    min-height: 100vh;
 }
 .marginRightContainer {
     width: 95%;

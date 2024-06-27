@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jono's Journal - C#</title>
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="./main.css">
+    <link type="text/css" rel="stylesheet" href="./subPages.css">
+    <!-- Icon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/siteIcon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navContainer">
+                <ul>
+                    <li class="navLinks">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="./codewars.html">Javascript</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="./jsDom.html">JS DOM</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="./css.html">CSS</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="./react.html">React</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="./databases.html">Databases</a>
+                    </li>
+                    <li class="navLinks">
+                        <a href="#">Project Management</a>
+                    </li>
+                    <li class="navLinks">
+                        <a class="currentPageLink" href="#">C#</a>
+                    </li>
+                </ul>
+            </div>            
+        </nav>
+        <div id="subnavContainer">
+            <div id="subnavSpacer"></div>
+            <ul id="subnavItemsContainer">
+                <li id="javascript1" class="subnavLinks">
+                    <a href="./codewars.html">weeks 1-3</a>
+                </li>
+                <li id="javascript2" class="subnavLinks">
+                    <a href="./codewars.html#week5">week 5</a>
+                </li>
+                <li id="jsDom1" class="subnavLinks">
+                    <a href="./#.html">week 1</a>
+                </li>
+                <li id="jsDom2" class="subnavLinks">
+                    <a href="./#.html">week 2</a>
+                </li>
+                <li id="css1" class="subnavLinks">
+                    <a href="./#.html">week 1</a>
+                </li>
+                <li id="css2" class="subnavLinks">
+                    <a href="./#.html">week 2</a>
+                </li>
+                <li id="databases1" class="subnavLinks">
+                    <a href="./databases.html">week 2</a>
+                </li>
+                <li id="databases2" class="subnavLinks">
+                    <a href="./databases.html#week3-5">weeks 3-5</a>
+                </li>
+                <li id="projman1" class="subnavLinks">
+                    <a href="./#.html">week 1</a>
+                </li>
+                <li id="projman2" class="subnavLinks">
+                    <a href="./#.html">week 2</a>
+                </li>
+                <li id="cSharp1" class="subnavLinks">
+                    <a href="./#.html">week 1</a>
+                </li>
+                <li id="cSharp2" class="subnavLinks">
+                    <a href="./#.html">week 2</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="aside">
+            <div class="asideFlexContainer">
+                <div class="asideMainHeading">
+                    <h2>Bookmarks</h2>
+                </div>
+                <div class="asideBox">
+                    <h3><a href="./react.html">Factory Model</a></h3>
+                    <h4>Learning - <a href="./cSharp.html">week 9</a></h4>
+                    <p>Using a Factory model to code a dice rolling app in C#.</p>
+
+                </div>
+                <!-- <div class="asideBox">
+                    <h3><a href="./react.html#firstComponent">My First Component</a></h3>
+                    <h4>Learning - <a href="./react.html#firstComponent">week 7</a></h4>
+                    <p>Building my first Component in React.</p>
+                </div>
+                <div class="asideBox">
+                    <h3><a href="./react.html#activity">Components Activity</a></h3>
+                    <h4>Progression - <a href="./react.html#activity">week 7</a></h4>
+                    <p>Using components to replicate screenshots from professional websites</p>
+                </div>
+                <div class="asideBox">
+                    <h3><a href="./react.html#state">State and Methods</a></h3>
+                    <h4>Learning - <a href="./react.html#state">week 7</a></h4>
+                    <p>Using the useState hook, map method, and updating state in React</p>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="subpageMainContainer"> 
+            <div class="marginRightContainer">  
+
+                <div class="subpageContentContainer">
+                    <div class="subpageContent">
+            
+                        <h1>C#</h1>          
+                        <h3>Week 9</h3>
+                        <h2>What is Factory Method?</h2>
+                        <p>Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. <br>You can create objects that you will need on the fly rather than having to hand-code every single object that will be needed.</p>                        
+                        <h2>Why use Factory?</h2>
+                        <p>
+                            Allows the program to be modular, flexible and easy to add new functionality to. Also more effiecient in storage.
+                            <br>
+                            Although this method may require longer to code and more lines of code, each individual section is much more compact. You can isolate classes which will consist of much fewer lines of code. A tidier, more organised and efficient method than one big chunky program.
+                            <br>
+                            Also if working in a group you can each work on different sections of the program at the same time without clashing.
+                            <br>
+                            If you are working on a multi-core computer you can write the code so that programs being processed are split between processors rather than if it were one chunk of code it would all have to be run through one.
+                        </p>
+                        <ul>
+                            <li><strong>Modular</strong> (modular design divides a system into smaller more manageable parts) - If you encounter an error it's going to be far easier to pinpoint where it's come from and what needs to be changed. For example try finding an error in 3 lines of code compared to 30 lines of code.</li>
+                            <li><strong>Flexible</strong> - If later on you need another class for a different function, you can easily add one, it's easily extendable.</li>
+                        </ul>
+                        <h4>The Design Pattern</h4>
+                        <img src="./images/factoryDesignPattern.png">
+                        <p>
+                            The <strong>main program</strong> that contains a <strong>main method</strong> which acts as a starting point for the program and what is used as the client between program and user.
+                            <br>
+                            The <strong>Factory</strong> will be where different objects will be created depending on what is required from the client. So the Factory contains the superclass and all of the subclasses that may be needed. It receives a request from the client and runs only the classes that are necessary and returns the result back to the client.
+                        </p>
+                        <h4>Dice Roller Codealong</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+    
+    <!-- JS  -->
+    <script src="./main.js"></script>
+</body>
+</html>

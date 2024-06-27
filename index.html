@@ -36,7 +36,7 @@
                         <a href="#">Project Management</a>
                     </li>
                     <li class="navLinks">
-                        <a href="#">C#</a>
+                        <a href="./cSharp.html">C#</a>
                     </li>
                 </ul>
             </div>            
@@ -83,7 +83,10 @@
             </ul>
         </div>
     </header>
-    <div class="landingMenu">
+    <!-- 
+    Idea for an autoscroll hero. The div below is a group of circles signifying which image is active
+    -->
+    <!-- <div class="landingMenu">
         <div class="circlesContainer">
             <div class="circle" id="currentCircle"></div>
             <div class="circle"></div>
@@ -93,100 +96,108 @@
             <div class="circle"></div>
             <div class="circle"></div>
         </div>
-    </div>
+    </div> -->
     <main>
         <div id="heroContainer">
-            <h1 id="siteTitle">Jono's Journal</h1>
+            <h1 id="siteTitle">Bootcamp Journal</h1>
         </div>   
         <div id="descriptionContainer">
             <div id="descriptionTextContainer">
-            <h1>So, what's this all about?</h1>
+            <h1>About</h1>
                 <p>This is a journal website documenting what I've learnt while on the Growth Company Software Developer Skills Bootcamp. </p><p>I talk about the different skills I've learnt, my progression as the weeks have passed, and the various pitfalls and hurdles I've hit and learnt lessons from. </p><p>I started the course with a small amount of experience with HTML, CSS and JavaScript after following tutorials on w3Schools.com and taking a short intro to web development course. Over the 11 weeks on the bootcamp I've learnt a whole lot and am all the more fascinated and enraptured to keep learning.</p>
+            </div>
+            <div id="descriptionTextContainer">
+                <p>I made this homepage here on week 2 of the 11 week bootcamp as part of a submission to showcase what we'd learnt on HTML, CSS and JS during the beginning of the course. The brief was to make a site where we made journal entries talking about what we had learnt and achieved. </p><p>As I carried on adding more to the site through the weeks it transitioned into more of a revision tool for myself where I could write up my notes and come back to them. Hopefully it still proves useful for presenting the knowledge I obtained throughout the course. You can see more journal style entries of what I've been up to on my <a class='homepageLink' href="https://jpmaxim.github.io/portfolioJonathanMaxim/" target='_blank' >portfolio</a>. </p>
             </div>
         </div>  
 
-        <div id="homepageProjectsDiv">
-            <h1>Projects</h1>
-        </div>
-        
+        <button id="CollapseWeek2Div" onclick="CollapseWeek2Div()">Show Week 2 Section</button>
 
-        <div class="mainContainer">
-            
-            <div class="LeftAndRightContainer"> <!--LEFT-->
-
-                <div id="codewarsContainer" class="contentContainer">
-                    <h2>JavaScript</h2>
-                    <p>read more about the solutions and lessons learnt on <a href="./codewars.html">javascript</a></p>
-                    <div class="textContainer">
-                        <h3>Sum By Factors</h3>
-                        <p>I wanted to try a 4 kyu Kata for a challenge and found this one called <i>Sum By Factors</i>. <br>The goal was, given an array of integers, to produce a sorted array of all prime factors and the sum of their multiples, in ascending order.</p>   
-                    </div>
-                    <div class="textContainer">
-                        <h3>Various 7+kyu's invloving arrays</h3>
-                        <p>When I can I've been trying to get a 7kyu in a day. Loving the challenge and they're great for imporving my JS skills and learning from other developers.</p>
-                    </div>
-                    <div class="textContainer">
-                        <h3>Plants and Zombies</h3>
-                        <p>After completing Sum By Factors I've gone for another challenge and upped the difficulty to 3kyu this time. This Kata is a fun Sim-like challenge based on the PlantsVsZombies game. You have to calculate how many moves any given situation will last before the game ends.</p>
-                    </div>
-                    <button><a href="./codewars.html">See Javascript Page</a></button>
-                </div>
-                
-                <div id="jsDomContainer" class="contentContainer">
-                    <h2>JS DOM</h2>
-                    <div class="textContainer">
-                        <h3>Drumkit Proj</h3>
-                        <p>This was a set project as part of the course in order to implement and consolidate what we'd researched on keyboard keycodes and how they can be used with Js DOM. <br>The webpage plays an audio file of a certain piece of kit dependant on what key you press&#129345;</p>                        
-                    </div>
-                    <button><a href="./drumkit/drumkit.html" target="_blank">SEE Drumkit</a></button>
-
-                    <div class="textContainer">
-                        <h3>Shuffle Cards Js Proj</h3>
-                        <p>Just had an idea to try writing a <a href="https://github.com/JPMaxim/journalWebsite/blob/master/pokerSim/shuffleTest.js" target="blank">JS program</a> that simulates shuffling a deck of cards to practice JS fundamentals. Did that and coded a test to test that it's accurate.</p><p>After that I thought it would be cool to apply it and maybe make a site that you can play different card games on to further test my JS and web dev skills. Made the beginnings of a texas holdem sim using Js DOM commands and functions.</p>
-                    </div>
-                    <button><a href="./pokerSim/poker.html" target="_blank">See Cards Simulator</a></button>
-                </div>
-
+        <div id="week2Hidden" style="display: none;">
+            <div id="homepageProjectsDiv">
+                <h1>Projects</h1>
             </div>
-            <div class="LeftAndRightContainer"> <!--RIGHT-->
+            
 
-                <div id="cssContainer" class="contentContainer">
-                    <h2>CSS</h2>
-                    <p><a href="./css.html">read more on my css page</a></p>
-                    <div class="textContainer">
-                        <h3>Hero Img</h3>
-                        <p>I'm really happy with the landing on this journal site.  </p>
-                        <h3>Nav bar</h3>
-                        <p>Pretty happy with the nav-bar too.  </p>
-                        <h3>Transition/Animation</h3>
-                        <p>I've added a transition and animation on  the buttons in these endeavor sections.</p>
-                        <h3>Flexbox</h3>
-                        <p>How can you not love flexbox?  </p>
-                        <h3>Media Queries Responsivity</h3>
-                        <p>Put a bit of time into having the site look alright on mobile and tablet too</p>
-                        <h3>To look further into:</h3>
-                        <ul>
-                            <li>matrix</li>
-                            <li>background - blend</li>
-                        </ul>
+            <div class="mainContainer">
+                
+                <div class="LeftAndRightContainer"> <!--LEFT-->
+
+                    <div id="codewarsContainer" class="contentContainer">
+                        <h2>JavaScript</h2>
+                        <p>read more about the solutions and lessons learnt on <a  class='homepageLink' href="./codewars.html">javascript</a></p>
+                        <div class="textContainer">
+                            <h3>Sum By Factors</h3>
+                            <p>I wanted to try a 4 kyu Kata for a challenge and found this one called <i>Sum By Factors</i>. <br>The goal was, given an array of integers, to produce a sorted array of all prime factors and the sum of their multiples, in ascending order.</p>   
+                        </div>
+                        <div class="textContainer">
+                            <h3>Various 7+kyu's invloving arrays</h3>
+                            <p>When I can I've been trying to get a 7kyu in a day. Loving the challenge and they're great for imporving my JS skills and learning from other developers.</p>
+                        </div>
+                        <div class="textContainer">
+                            <h3>Plants and Zombies</h3>
+                            <p>After completing Sum By Factors I've gone for another challenge and upped the difficulty to 3kyu this time. This Kata is a fun Sim-like challenge based on the PlantsVsZombies game. You have to calculate how many moves any given situation will last before the game ends.</p>
+                        </div>
+                        <button><a href="./codewars.html">See Javascript Page</a></button>
                     </div>
-                    <button><a href="./css.html">See More</a></button>
-                </div>
+                    
+                    <div id="jsDomContainer" class="contentContainer">
+                        <h2>JS DOM</h2>
+                        <div class="textContainer">
+                            <h3>Drumkit Proj</h3>
+                            <p>This was a set project as part of the course in order to implement and consolidate what we'd researched on keyboard keycodes and how they can be used with Js DOM. <br>The webpage plays an audio file of a certain piece of kit dependant on what key you press&#129345;</p>                        
+                        </div>
+                        <button><a href="./drumkit/drumkit.html" target="_blank">SEE Drumkit</a></button>
 
-                <div id="databasesContainer" class="contentContainer">
-                    <h2>Databases</h2>
-                    <p><a href="./css.html">read more on my css page</a></p>
-                    <div class="textContainer">
-                        <p>SQL an that</p>
+                        <div class="textContainer">
+                            <h3>Shuffle Cards Js Proj</h3>
+                            <p>Just had an idea to try writing a <a href="https://github.com/JPMaxim/journalWebsite/blob/master/pokerSim/shuffleTest.js" target="blank">JS program</a> that simulates shuffling a deck of cards to practice JS fundamentals. Did that and coded a test to test that it's accurate.</p><p>After that I thought it would be cool to apply it and maybe make a site that you can play different card games on to further test my JS and web dev skills. Made the beginnings of a texas holdem sim using Js DOM commands and functions.</p>
+                        </div>
+                        <button><a href="./pokerSim/poker.html" target="_blank">See Cards Simulator</a></button>
                     </div>
-                    <button><a href="./css.html">See More</a></button>
-                </div>
 
-            </div>                        
+                </div>
+                <div class="LeftAndRightContainer"> <!--RIGHT-->
+
+                    <div id="cssContainer" class="contentContainer">
+                        <h2>CSS</h2>
+                        <p><a  class='homepageLink' href="./css.html">read more on my css page</a></p>
+                        <div class="textContainer">
+                            <h3>Hero Img</h3>
+                            <p>I'm really happy with the landing on this journal site.  </p>
+                            <h3>Nav bar</h3>
+                            <p>Pretty happy with the nav-bar too.  </p>
+                            <h3>Transition/Animation</h3>
+                            <p>I've added a transition and animation on  the buttons in these endeavor sections.</p>
+                            <h3>Flexbox</h3>
+                            <p>How can you not love flexbox?  </p>
+                            <h3>Media Queries Responsivity</h3>
+                            <p>Put a bit of time into having the site look alright on mobile and tablet too</p>
+                            <h3>To look further into:</h3>
+                            <ul>
+                                <li>matrix</li>
+                                <li>background - blend</li>
+                            </ul>
+                        </div>
+                        <button><a href="./css.html">See More</a></button>
+                    </div>
+
+                    <div id="databasesContainer" class="contentContainer">
+                        <h2>Databases</h2>
+                        <p><a class='homepageLink'  href="./databases.html">read more on my databases page</a></p>
+                        <div class="textContainer">
+                            <p>My learning on SQL uses and syntax</p>
+                        </div>
+                        <button><a href="./css.html">See More</a></button>
+                    </div>
+
+                </div>                        
+            </div>
         </div>
     </main>
 
     <footer>
+        <p style="width:80%; margin: auto; display: flex; justify-content: end;">Jonathan Maxim Twenty Twenty Three</p>
     </footer>
     <!-- JS  -->
     <script src="./main.js"></script>
